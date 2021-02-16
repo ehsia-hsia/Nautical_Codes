@@ -1,5 +1,5 @@
 body{
-    background-image: url("Images/head.png");
+    background-color: white;
 }
 
 .header{
@@ -18,10 +18,16 @@ body{
 
 }
 
+img:hover{
+    z-index: 99;
+}
+
 .header .gallery figure{
     position: relative;
     padding: 0;
     margin: 0;
+    width: 100%;
+    
 
 }
 .header figcaption{
@@ -29,9 +35,15 @@ body{
     bottom: 0;
     width: 100%;
     height: 10%;
-    background:  rgba(255, 255, 255, 0.2);
+    color: black;
+    background-color: blue;
+    border: solid;
+    border-color: black;
+    background-color:  rgba(255, 255, 255, 0.8);
     
 }
+
+
 
 
 .gallery{
@@ -41,7 +53,17 @@ body{
 }
 .description{
     border: solid;
-    border-top: 0;
-    margin: 0;
-    padding: .5rem;
+
+    /* border-top: 0; */
+    /* padding: .5rem; */
+    background-color: white;
+    /* -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222); */
+
+    
+
+}
+
+.name{
+    background-color: blue;
 }
