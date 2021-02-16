@@ -49,16 +49,13 @@ img:hover{
 .gallery{
     text-align: center;
     max-width: 500px;
+    border: solid: 
     
 }
 .description{
     border: solid;
-
-    /* border-top: 0; */
-    /* padding: .5rem; */
     background-color: white;
-    /* -webkit-filter: drop-shadow(1px 1px 1px #222);
-    filter: drop-shadow(1px 1px 1px #222); */
+
 
     
 
