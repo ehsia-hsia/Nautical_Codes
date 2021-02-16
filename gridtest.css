@@ -54,6 +54,7 @@ img:hover{
 }
 .description{
     border: solid;
+    border-color: red;
     background-color: white;
 
 
