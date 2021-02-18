@@ -1,0 +1,187 @@
+<!DOCTYPE hmtl>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Grid Test</title>
+    <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- CSS and Fonts -->
+    <link rel="stylesheet" href="flags.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-custom sticky-top navbar-expand-lg navbar-light sm-light">
+        <a class="navbar-brand" target= "_blank" href="index.html">
+         Nautical Codes
+        </a>
+        <input class="search" placeholder="Search for Flags..."> 
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+  
+          <li class="nav-item active">
+            <a class="nav-link" href="#sem">Semaphore<span class="sr-only">(flashart)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#mor">Morse Code<span class="sr-only">(blackwhite)</span></a>
+          </li>
+  
+          <li class="nav-item active">
+            <a class="nav-link" href="#flags"> Flags <span class="sr-only">(contact)</span></a>
+          </li>
+
+        </ul>
+      </div>
+
+    </nav>
+
+
+    <section class="grid-layout" id="myelement">
+        <div class="card" id="alpha">
+            <figure>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Alpha_flag.svg/1200px-Alpha_flag.svg.png">
+            </figure>
+            <div class="description">
+                <h1 class="name"> Alpha</h1>
+                <p> "Diver down; Keep clear."</p>
+             </div>
+        </div>
+
+        <div class="card" id="bravo">
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bravo_flag.svg/1280px-Bravo_flag.svg.png">
+            </figure>
+            <div class="description">
+                <h1 class="name"> Bravo</h1>
+                <p> "Carrying, taking in, or discharging dangerous cargo."</p>
+             </div>
+        </div>
+
+        <div class="card" id="charlie">
+            <figure>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Charlie_flag.svg">
+            </figure>
+            <div class="description">
+                <h1 class="name"> Charlie </h1>
+                <p> "Yes."</p>
+             </div>
+        </div>
+        <div class="card" id="delta">
+            <figure>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Delta_flag.svg/1280px-Delta_flag.svg.png">
+            </figure>
+            <div class="description">
+                <h1 class="name"> Delta</h1>
+                <p> "I'm maneuvering with difficulty; Keep clear."</p>
+             </div>
+        </div>
+
+        <div class="card" id="echo">
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Echo_flag.svg/1200px-Echo_flag.svg.png">
+        </figure>
+        <div class="description">
+            <h1 class="name"> Echo</h1>
+            <p> "Altering course to starboard."</p>
+         </div>
+    </div>
+
+    <div class="card" id="foxtrot">
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Foxtrot_flag.svg/1200px-Foxtrot_flag.svg.png">
+        </figure>
+        <div class="description">
+            <h1 class="name"> Foxtrot</h1>
+            <p> "I have been disabled; Please communicate with me."</p>
+         </div>
+    </div>
+
+    <div class="card" id="golf">
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Golf_flag.svg/1280px-Golf_flag.svg.png">
+        </figure>
+        <div class="description">
+            <h1 class="name"> Golf </h1>
+            <p> "I need a pilot for fishing boats; Hauling nets."</p>
+         </div>
+    </div>
+    <div class="card" id="hotel">
+        <figure>
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAACVBMVEX/////AAD/paVRwSm3AAABSklEQVR4nO3QIQEAIBAAMaB/aCRiAXhxi7C1pjh7it8TTyfqRJ2oE3WiTtSJOlEn6kSdqBN1ok7UiTpRJ+pEnagTdaJO1Ik6USfqRJ2oE3WiTtSJOlEn6kSdqBN1ok7UiTpRJ+pEnagTdaJO1Ik6USfqRJ2oE3WiTtSJOlEn6kSdqBN1ok7UiTpRJ+pEnagTdaJO1Ik6USfqRJ2oE3WiTtSJOlEn6kSdqBN1ok7UiTpRJ+pEnagTdaJO1Ik6USfqRJ2oE3WiTtSJOlEn6kSdqBN1ok7UiTpRJ+pEnagTdaJO1Ik6USfqRJ2oE3WiTtSJOlEn6kSdqBN1ok7UiTpRJ+pEnagTdaJO1Ik6USfqRJ2oE3WiTtSJOlEn6kSdqBN1ok7UiTpRJ+pEnagTdaJO1Ik6USfqRJ2oE3WiTtSJOlEn6kSdqBN1ojknF6UdY16XBJ7xAAAAAElFTkSuQmCC">
+        </figure>
+        <div class="description">
+            <h1 class="name"> Hotel</h1>
+            <p> "I have a piiot on board."</p>
+         </div>
+    </div>
+    <div class="card" id="india">
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/36/India_flag.svg">
+        </figure>
+        <div class="description">
+            <h1 class="name"> India</h1>
+            <p> "I am altering course to port."</p>
+         </div>
+    </div>
+
+    <div class="card" id="juliet">
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Juliet_flag.svg">
+        </figure>
+        <div class="description">
+            <h1 class="name"> Juliet</h1>
+            <p> "Vessel on fire, or leaking dangerous cargo; Keep clear."</p>
+         </div>
+    </div>
+
+    <div class="card" id="kilo">
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Kilo_flag.svg/320px-Kilo_flag.svg.png">
+        </figure>
+        <div class="description">
+            <h1 class="name"> Kilo </h1>
+            <p> "I want to communicate with you."</p>
+         </div>
+    </div>
+    <div class="card" id="lima">
+        <figure>
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Lima_flag.svg/1280px-Lima_flag.svg.png">
+        </figure>
+        <div class="description">
+            <h1 class="name"> Lima</h1>
+            <p> "Stop vessel immediately."</p>
+         </div>
+    </div>
+
+       
+    </section>
+</body>
+
+</html>
