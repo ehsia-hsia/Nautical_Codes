@@ -8,7 +8,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="flags.css">
-    <script src="indexFlag.js" charset="utf-8"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,7 +31,6 @@
         <a class="navbar-brand" target="_blank" href="index.html">
             Nautical Codes
         </a>
-        <input class="searchBar" type="text" id="myInput" onkeyup="flagSearch()" placeholder="Search for flags...">
 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -59,13 +58,22 @@
     </nav>
 
     <div class="btn-toolbar mb-3 colorButtons" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group mr-2  position-fixed custom-group" role="group" aria-label="First group">
-            <button type="button" class="btn btn-secondary" id="myRedButton" onclick="Red()">Red Flags</button>
-            <button type="button" class="btn btn-secondary" id="myBlueButton" onclick="Blue()">Blue Flags</button>
-            <button type="button" class="btn btn-secondary" id="myYellowButton" onclick="Yellow()">Yellow Flags</button>
-            <button type="button" class="btn btn-secondary" id="myWhiteButton" onclick="White()">White Flags</button>
-            <button type="button" class="btn btn-secondary" id="myBlackButton" onclick="Black()">Black Flags</button>
-            <button type="button" class="btn btn-secondary" id="myAllButton" onclick="All()">All Flags</button>
+
+        <div class="btn-group mr-2  position-fixed custom-group row" role="group" aria-label="First group">
+            <input class="searchBar" type="text" id="myInput" onkeyup="flagSearch()" placeholder="Search for flags...">
+            <button type="button" class="btn btn-secondary col-lg-1.5" id="myRedButton" onclick="Red()">Red
+                Flags</button>
+            <button type="button" class="btn btn-secondary col-lg-1.5" id="myBlueButton" onclick="Blue()">Blue
+                Flags</button>
+            <button type="button" class="btn btn-secondary col-lg-1.5" id="myYellowButton" onclick="Yellow()">Yellow
+                Flags</button>
+            <button type="button" class="btn btn-secondary col-lg-1.5" id="myWhiteButton" onclick="White()">White
+                Flags</button>
+            <button type="button" class="btn btn-secondary col-lg-1.5" id="myBlackButton" onclick="Black()">Black
+                Flags</button>
+            <button type="button" class="btn btn-secondary col-lg-1.5" id="myAllButton" onclick="All()">All
+                Flags</button>
+
 
         </div>
     </div>
@@ -212,7 +220,7 @@
 
 
     </section>
-
+    <script src="indexFlag.js" charset="utf-8"></script>
 
 </body>
 <!-- <footer></script></footer> -->

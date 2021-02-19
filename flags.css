@@ -43,33 +43,29 @@ body{
     color: grey !important;
   }
 
-
-.gridlayout{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
-    grid-gap: 4rem;
-    align-items: center;
-    padding: 2rem;
-    margin: auto;
-    align-items: baseline;
-    
-}
-
 .colorButtons{
   position: relative;
   z-index: 99;
 }
 .custom-group{
-  width: 100vw;
-  padding: 0;
-  margin: 0;
+  width: 100%;
+  padding: 1%;
+  margin: auto;
+  margin-right: 1%;
   border-bottom: solid;
   border-width: 5px;
   border-color: #FFDE59;
   background-color: white;
   box-sizing: border-box;
 }
+.btn{
+  font-size: 1.2em;
+  font-weight:bold;
+}
 
+.searchBar{
+  
+}
 #myRedButton{
   color: white;
   border-color: #D02023;
@@ -88,7 +84,7 @@ body{
   border-radius: 0;
 }
 #myBlueButton:hover{
-  background-color:rgba(0, 74, 130);;
+  background-color:rgb(1, 57, 100);;
   border-color:rgba(0, 74, 130);
 }
 #myYellowButton{
@@ -98,12 +94,12 @@ body{
   border-radius: 0;
 }
 #myYellowButton:hover{
-  border-color:rgb(201, 163, 10);
+  border-color:rgb(146, 118, 6);
   background-color:rgb(201, 163, 10);
 }
 #myWhiteButton{
   color: black;
-  border-color:white;
+  border-color:black;
   background-color:white;
   border-radius: 0;
 }
@@ -124,6 +120,18 @@ body{
   color: white;
 }
 
+
+.gridlayout{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+  grid-gap: 4rem;
+  align-items: center;
+  padding: 2rem;
+  margin: auto;
+  margin-top:5%;
+  align-items: baseline;
+  
+}
 .card{
     text-align: center;
     max-width: 500px;
@@ -146,7 +154,8 @@ body{
 .description{
     padding: 1%;
     /* height: 40%; */
-    border-radius: 10px;
+    border: solid;
+    border-width: 5px;
     border-color: black;
     background-color: white;
     -webkit-filter: drop-shadow(3px 3px 3px #222);
@@ -154,12 +163,13 @@ body{
     word-wrap: break-all;
 }
 
+ 
 .name{
     /* height: 100%; */
     margin: 0;
     margin-bottom: 0;
     padding: 2%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background-color: black;
     color: white;
     -webkit-filter: drop-shadow(2px 2px 2px #222);
@@ -176,4 +186,12 @@ body{
   padding: 5%;
   text-align: center;
   font-size: 15px;
+}
+
+
+@media(max-width:600px){
+  .gridlayout{
+    margin-top: 150px;
+  }
+
 }
