@@ -25,7 +25,6 @@
         <a class="navbar-brand" target= "_blank" href="index.html">
          Nautical Codes
         </a>
-        <input class="search" placeholder="Search for Flags..."> 
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,8 +50,10 @@
 
     </nav>
 
+    <input  type="text" id="myInput" onkeyup="flagSearch()" placeholder="Search for Flags..."> 
 
     <section class="grid-layout" id="myelement">
+
         <div class="card" id="alpha">
             <figure>
                 <img
@@ -182,6 +183,8 @@
 
        
     </section>
-</body>
+    <script src="indexFlag.js" charset="utf-8"></script>
 
+</body>
+<!-- <footer></script></footer> -->
 </html>
