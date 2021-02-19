@@ -9,7 +9,8 @@
 body{
     /* padding: 2%; */
     margin: 0;
-    background-image: url(Images/head.png); 
+    font-family: 'Century Gothic';
+  background-image: url(Images/head.png); 
   background-size: cover; 
    background-attachment: fixed;
   background-repeat: repeat;  
