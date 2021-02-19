@@ -13,6 +13,7 @@ function flagSearch(){
                 card[i].style.display ="block";
             }
         }
+        
+    }
 
-}
 
