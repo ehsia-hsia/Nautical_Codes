@@ -43,7 +43,7 @@ body{
   }
 
 
-.grid-layout{
+.gridlayout{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
     grid-gap: 4rem;
@@ -92,15 +92,36 @@ body{
 }
 #myYellowButton{
   color: white;
-  border-color: #FFDE59;
-  background-color: #FFDE59;
+  border-color:rgb(231, 185, 1);
+  background-color:rgb(231, 185, 1);
   border-radius: 0;
 }
 #myYellowButton:hover{
-  background-color:rgba(0, 74, 130);;
-  border-color:rgba(0, 74, 130);
+  border-color:rgb(201, 163, 10);
+  background-color:rgb(201, 163, 10);
 }
-
+#myWhiteButton{
+  color: black;
+  border-color:white;
+  background-color:white;
+  border-radius: 0;
+}
+#myWhiteButton:hover{
+  border-color:grey;
+  background-color:grey;
+  color: white;
+}
+#myBlackButton{
+  color: white;
+  border-color:black;
+  background-color:black;
+  border-radius: 0;
+}
+#myBlackButton:hover{
+  border-color:rgb(88, 86, 86);
+  background-color:rgb(88, 86, 86);
+  color: white;
+}
 
 .card{
     text-align: center;
@@ -110,7 +131,7 @@ body{
     background-color: transparent;
 }
 
-.grid-layout .card img{
+.gridlayout .card img{
     width: 100%;
     /* padding: 3%; */
     max-width: 500px;

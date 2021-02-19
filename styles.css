@@ -128,7 +128,7 @@ font-size: 25px;
 .sem_button:hover{
   color: black;
   border-color:#FFDE59;
-  background-color: rgba(255, 222, 89, 0.1);
+  background-color:rgb(255, 222, 89);
 }
 
 .morse_button{

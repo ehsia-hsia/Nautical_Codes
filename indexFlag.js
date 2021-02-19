@@ -96,3 +96,24 @@ function flagSearch(){
                             }
                             
                         }
+
+
+                    function All(){
+                        let input = document.getElementById('myAlButton');
+                        // input = input.toLowerCase();
+                        let card = document.getElementsByClassName('card');
+                        let name = document.getElementsByClassName('name');
+                        let grid = document.querySelector('.gridlayout');                    
+                            for (let i = 0; i < card.length; i++){
+                                if(!card[i].innerHTML.includes("")){
+                                    card[i].style.display = "none";
+                                } else {
+                                    card[i].style.display = "grid";
+                                    card[i].style.margin = 0;
+                                }
+                            }
+                            
+                        }
+
+                        
+                       
