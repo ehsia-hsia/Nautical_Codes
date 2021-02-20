@@ -1,5 +1,51 @@
+//FLAG ID"S 
+let alpha = document.getElementById('alpha');
+let bravo = document.getElementById("bravo");
+let charlie = document.getElementById("charlie");
+let delta = document.getElementById("delta");
+let echo = document.getElementById("echo");
+let foxtrot = document.getElementById("foxtrot");
+let golf = document.getElementById("golf");
+let hotel = document.getElementById("hotel");
+let india = document.getElementById("india");
+let juliet = document.getElementById("juliet");
+let kilo = document.getElementById("kilo");
+let lima = document.getElementById("lima");
+
+//COLOR ARRAYS
+let red = [bravo, charlie, echo, foxtrot, hotel];
+let blue = [alpha, charlie, delta, echo, golf, juliet, kilo];
+let yellow = [delta, golf, india, kilo];
+let white = [alpha, charlie, foxtrot, hotel, juliet];
+let black = [india, lima];
 
 
+//EVENT LISTENERS
+let redButton = document.querySelector('#myRedButton');
+redButton.addEventListener("click", Red);
+
+let blueButton = document.querySelector('#myBlueButton');
+blueButton.addEventListener("click", Blue);
+
+let yellowButton = document.querySelector('#myYellowButton');
+yellowButton.addEventListener("click", Yellow);
+
+let whiteButton = document.querySelector('#myWhiteButton');
+whiteButton.addEventListener("click", White);
+
+let blackButton = document.querySelector('#myBlackButton');
+blackButton.addEventListener("click", Black);
+
+let searchBar = document.querySelector('#myInput');
+searchBar.addEventListener("keyup", flagSearch);
+
+// VARIABLES
+let card = document.getElementsByClassName('card');
+let name = document.getElementsByClassName('name');
+
+
+
+//SEARCH BAR
 function flagSearch() {
     let input = document.getElementById('myInput').value;
     input = input.toLowerCase();
@@ -10,39 +56,37 @@ function flagSearch() {
         if (!card[i].innerHTML.toLowerCase().includes(input)) {
             card[i].style.display = "none";
         } else {
-            card[i].style.display = "block";
+            card[i].style = "gridLayout";
         }
     }
 
 }
 
-
+//BUTTON FUNCTIONS 
 function Red() {
     let input = document.getElementById('myRedButton');
-    // input = input.toLowerCase();
     let card = document.getElementsByClassName('card');
-
+    let name = document.getElementsByClassName('name');
     for (let i = 0; i < card.length; i++) {
-        if (!card[i].innerHTML.includes("RED")) {
+        if (!red.includes(card[i])) {
             card[i].style.display = "none";
         } else {
-            card[i].style.display = "block";
+            card[i].style = "gridLayout";
         }
     }
 
 }
 
+
 function Blue() {
-    let input = document.getElementById('myBlueButton');
-    // input = input.toLowerCase();
+    let input = document.querySelector('#myBlueButton');
     let card = document.getElementsByClassName('card');
     let name = document.getElementsByClassName('name');
-
     for (let i = 0; i < card.length; i++) {
-        if (!card[i].innerHTML.includes("BLUE")) {
+        if (!blue.includes(card[i])) {
             card[i].style.display = "none";
         } else {
-            card[i].style.display = "block";
+            card[i].style = "gridLayout";
         }
     }
 
@@ -51,15 +95,13 @@ function Blue() {
 
 function Yellow() {
     let input = document.getElementById('myYellowButton');
-    // input = input.toLowerCase();
     let card = document.getElementsByClassName('card');
     let name = document.getElementsByClassName('name');
-
     for (let i = 0; i < card.length; i++) {
-        if (!card[i].innerHTML.includes("YELLOW")) {
+        if (!yellow.includes(card[i])) {
             card[i].style.display = "none";
         } else {
-            card[i].style.display = "block";
+            card[i].style = "gridLayout";
         }
     }
 
@@ -67,31 +109,29 @@ function Yellow() {
 
 function White() {
     let input = document.getElementById('myWhiteButton');
-    // input = input.toLowerCase();
     let card = document.getElementsByClassName('card');
     let name = document.getElementsByClassName('name');
-
     for (let i = 0; i < card.length; i++) {
-        if (!card[i].innerHTML.includes("WHITE")) {
+        if (!white.includes(card[i])) {
             card[i].style.display = "none";
         } else {
-            card[i].style.display = "block";
+            card[i].style = "gridLayout";
         }
     }
 
 }
 
+
+
 function Black() {
     let input = document.getElementById('myBlackButton');
-    // input = input.toLowerCase();
     let card = document.getElementsByClassName('card');
     let name = document.getElementsByClassName('name');
-
     for (let i = 0; i < card.length; i++) {
-        if (!card[i].innerHTML.includes("BLACK")) {
+        if (!black.includes(card[i])) {
             card[i].style.display = "none";
         } else {
-            card[i].style.display = "block";
+            card[i].style = "gridLayout";
         }
     }
 
