@@ -20,14 +20,19 @@ let romeo = document.getElementById("romeo");
 let sierra = document.getElementById("sierra");
 let tango = document.getElementById("tango");
 let uniform = document.getElementById("uniform");
+let victor = document.getElementById("victor");
+let whiskey = document.getElementById("whiskey");
+let xray = document.getElementById("xray");
+let yankee = document.getElementById("yankee");
+let zulu = document.getElementById("zulu");
 
 
 //COLOR ARRAYS
-let red = [bravo, charlie, echo, foxtrot, hotel, oscar, romeo, tango, uniform];
-let blue = [alpha, charlie, delta, echo, golf, juliet, kilo, mike, november, papa, sierra, tango];
-let yellow = [delta, golf, india, kilo, oscar, quebec, romeo];
-let white = [alpha, charlie, foxtrot, hotel, juliet, mike, november, papa, sierra, tango, uniform];
-let black = [india, lima];
+let red = [bravo, charlie, echo, foxtrot, hotel, oscar, romeo, tango, uniform, victor, whiskey, yankee, zulu];
+let blue = [alpha, charlie, delta, echo, golf, juliet, kilo, mike, november, papa, sierra, tango, whiskey, xray, zulu];
+let yellow = [delta, golf, india, kilo, oscar, quebec, romeo, yankee, zulu];
+let white = [alpha, charlie, foxtrot, hotel, juliet, mike, november, papa, sierra, tango, uniform, victor, whiskey, xray];
+let black = [india, lima, zulu];
 
 
 //EVENT LISTENERS
