@@ -11,12 +11,16 @@ let india = document.getElementById("india");
 let juliet = document.getElementById("juliet");
 let kilo = document.getElementById("kilo");
 let lima = document.getElementById("lima");
+let mike = document.getElementById("mike");
+let november = document.getElementById("november");
+
+
 
 //COLOR ARRAYS
 let red = [bravo, charlie, echo, foxtrot, hotel];
-let blue = [alpha, charlie, delta, echo, golf, juliet, kilo];
+let blue = [alpha, charlie, delta, echo, golf, juliet, kilo, mike, november];
 let yellow = [delta, golf, india, kilo];
-let white = [alpha, charlie, foxtrot, hotel, juliet];
+let white = [alpha, charlie, foxtrot, hotel, juliet, mike, november];
 let black = [india, lima];
 
 
