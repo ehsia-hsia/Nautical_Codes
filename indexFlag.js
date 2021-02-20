@@ -13,14 +13,20 @@ let kilo = document.getElementById("kilo");
 let lima = document.getElementById("lima");
 let mike = document.getElementById("mike");
 let november = document.getElementById("november");
-
+let oscar = document.getElementById("oscar");
+let papa = document.getElementById("papa");
+let quebec = document.getElementById("quebec");
+let romeo = document.getElementById("romeo");
+let sierra = document.getElementById("sierra");
+let tango = document.getElementById("tango");
+let uniform = document.getElementById("uniform");
 
 
 //COLOR ARRAYS
-let red = [bravo, charlie, echo, foxtrot, hotel];
-let blue = [alpha, charlie, delta, echo, golf, juliet, kilo, mike, november];
-let yellow = [delta, golf, india, kilo];
-let white = [alpha, charlie, foxtrot, hotel, juliet, mike, november];
+let red = [bravo, charlie, echo, foxtrot, hotel, oscar, romeo, tango, uniform];
+let blue = [alpha, charlie, delta, echo, golf, juliet, kilo, mike, november, papa, sierra, tango];
+let yellow = [delta, golf, india, kilo, oscar, quebec, romeo];
+let white = [alpha, charlie, foxtrot, hotel, juliet, mike, november, papa, sierra, tango, uniform];
 let black = [india, lima];
 
 
