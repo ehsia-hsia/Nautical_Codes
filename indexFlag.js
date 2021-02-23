@@ -72,6 +72,7 @@ function flagSearch() {
             card[i].style.display = "none";
         } else {
             card[i].style = "gridLayout";
+            card[i].style.maxWidth = "400px"
         }
     }
 
@@ -82,6 +83,8 @@ function Red() {
     let input = document.getElementById('myRedButton');
     let card = document.getElementsByClassName('card');
     let name = document.getElementsByClassName('name');
+    document.querySelector(".header").style.display = "none";
+
     for (let i = 0; i < card.length; i++) {
         if (!red.includes(card[i])) {
             card[i].style.display = "none";
@@ -97,6 +100,8 @@ function Blue() {
     let input = document.querySelector('#myBlueButton');
     let card = document.getElementsByClassName('card');
     let name = document.getElementsByClassName('name');
+    document.querySelector(".header").style.display = "none";
+
     for (let i = 0; i < card.length; i++) {
         if (!blue.includes(card[i])) {
             card[i].style.display = "none";
@@ -112,6 +117,8 @@ function Yellow() {
     let input = document.getElementById('myYellowButton');
     let card = document.getElementsByClassName('card');
     let name = document.getElementsByClassName('name');
+    document.querySelector(".header").style.display = "none";
+
     for (let i = 0; i < card.length; i++) {
         if (!yellow.includes(card[i])) {
             card[i].style.display = "none";
@@ -126,6 +133,8 @@ function White() {
     let input = document.getElementById('myWhiteButton');
     let card = document.getElementsByClassName('card');
     let name = document.getElementsByClassName('name');
+    document.querySelector(".header").style.display = "none";
+
     for (let i = 0; i < card.length; i++) {
         if (!white.includes(card[i])) {
             card[i].style.display = "none";
@@ -142,6 +151,8 @@ function Black() {
     let input = document.getElementById('myBlackButton');
     let card = document.getElementsByClassName('card');
     let name = document.getElementsByClassName('name');
+    document.querySelector(".header").style.display = "none";
+
     for (let i = 0; i < card.length; i++) {
         if (!black.includes(card[i])) {
             card[i].style.display = "none";
@@ -161,6 +172,8 @@ function All() {
     let card = document.getElementsByClassName('card');
     let name = document.getElementsByClassName('name');
     let grid = document.querySelector('.gridlayout');
+    let header = document.querySelector(".header").style.display = "block";
+
     for (let i = 0; i < card.length; i++) {
         if (!card[i].innerHTML.includes("")) {
             card[i].style.display = "none";

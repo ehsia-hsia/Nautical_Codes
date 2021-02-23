@@ -57,11 +57,9 @@
 
     </nav>
 
-
     <div class="btn-toolbar mb-3 colorButtons" role="toolbar" aria-label="Toolbar with button groups">
 
-
-        <div class="btn-group mr-2  position-fixed custom-group row" role="group" aria-label="First group">
+        <div class="btn-group mr-2  fixed-bottom custom-group row" role="group" aria-label="First group">
 
             <input class="searchBar" type="text" id="myInput" onkeyup="flagSearch()" placeholder="Search for flags...">
             <button type="button" class="btn btn-secondary col-lg-1.5" id="myRedButton">Red
@@ -77,18 +75,23 @@
             <button type="button" class="btn btn-secondary col-lg-1.5" id="myAllButton" onclick="All()">All
                 Flags</button>
 
-
+            <div class="headFooter row ">
+                <i>Search by flag meanings, names, or sort through the flags by
+                    color.</i>
+            </div>
         </div>
+
     </div>
 
     <!--Header-->
     <div class="header">
         <div class="headText row">
             <h1 class="col-lg-6">Nautical Flags</h1>
-            <p class="col-lg-6"> Nautical flags are an international code used by ship to communicate. This guide
-                focuses on international flag codes. Search by flag meanings, names, or sort through the flags by color.
+            <p class="col-lg-6"> Nautical flags are an international codes used by ships to communicate. This guide
+                focuses on international flag codes.<br>
             </p>
         </div>
+
     </div>
 
     <!-- FLAG GRIDS-->
