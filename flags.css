@@ -10,10 +10,11 @@ body{
     /* padding: 2%; */
     margin: 0;
     font-family: 'Century Gothic';
-  background-image: url(Images/head.png); 
+    background-color: rgb(22, 91, 143);
+  /* background-image: url(Images/head.png); 
   background-size: cover; 
    background-attachment: fixed;
-  background-repeat: repeat;  
+  background-repeat: repeat;   */
   }
 .navbar-custom {
   width: 100vw;
@@ -25,6 +26,7 @@ body{
   
   .navbar-brand {
     color: black !important;
+    padding-left: .5%;
     font-size: 40px;
     font-family: 'Century Gothic';
   }
@@ -43,29 +45,37 @@ body{
     color: grey !important;
   }
 
+ 
 .colorButtons{
   position: relative;
   z-index: 99;
+  width: 100vw;
 }
 .custom-group{
   width: 100%;
+  /* height: 100px; */
   padding: .5%;
-  margin: auto;
-  margin-right: 1%;
+  margin: auto  !important;
+  margin-left: auto;
+  margin-right: auto;
   border-bottom: solid;
   border-width: 5px;
   border-color: #FFDE59;
-  background-color: #004AAD  ;
+  background-color: white;
+  /* background-color: #004AAD  ; */
   box-sizing: border-box;
 }
+
 .btn{
   font-size: 1em;
-  font-weight:bold;
+  font-weight: bold;
+  height: 50px;
 }
 
 .searchBar{
-  
+  height: 50px;
 }
+
 #myRedButton{
   color: white;
   border-color: #D02023;
@@ -120,6 +130,30 @@ body{
   color: white;
 }
 
+.header{
+  margin: auto;
+  display: block;
+  background-color: white;
+  width: 60%;
+  margin-top: 100px;
+
+ 
+}
+  
+.headText{
+  padding: 3%;
+  align-items: bcenter;
+}
+
+.headText h1{
+  text-align: center;
+  margin-top: 3%;
+}
+.headText p{
+  text-align: left;
+  word-wrap: break-word;
+    
+}
 
 .gridlayout{
   display: grid;
@@ -128,7 +162,6 @@ body{
   align-items: center;
   padding: 2rem;
   margin: auto;
-  margin-top:5%;
   align-items:center;
   
 }
@@ -151,6 +184,7 @@ body{
     z-index: 1;
     margin-top: 4%;
 } 
+
 #papa img , #quebec img, #sierra img, #tango img, #uniform img, #victor img, #whiskey img , #xray img, #yankee img, #zulu img{
   max-width: 240px;
 }
@@ -160,7 +194,7 @@ body{
     /* height: 40%; */
     border: solid;
     border-width: 5px;
-    border-color: black;
+    border-color: rgb(6, 67, 114);
     background-color: white;
     -webkit-filter: drop-shadow(3px 3px 3px #222);
     filter: drop-shadow(3px 3px 3px #222);
@@ -174,7 +208,7 @@ body{
     margin-bottom: 0;
     padding: 2%;
     /* border-radius: 10px; */
-    background-color: black;
+    background-color: rgb(6, 67, 114);
     color: white;
     -webkit-filter: drop-shadow(2px 2px 2px #222);
     filter: drop-shadow(2px 2px 2px #222);

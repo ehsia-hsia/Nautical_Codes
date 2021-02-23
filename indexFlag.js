@@ -146,7 +146,9 @@ function Black() {
         if (!black.includes(card[i])) {
             card[i].style.display = "none";
         } else {
-            card[i].style = "gridLayout";
+            card[i].style = "block";
+            document.getElementById("india").style.maxWidth = "400px";
+            document.getElementById("lima").style.maxWidth = "400px";
         }
     }
 
