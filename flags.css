@@ -147,7 +147,8 @@ body {
 .header {
   margin: auto;
   margin-top: 10%;
-  width: 60%;
+  width: 90%;
+  height: 50%;
   display: block;
   background-color: white;
   border: solid;
@@ -157,18 +158,21 @@ body {
 
 .headText {
   padding: 3%;
-  /* padding-bottom: 0; */
+  padding-bottom: 0;
   word-wrap: break-word;
   margin-bottom: 0%;
 }
 
 .headText h1 {
   text-align: center;
-  margin-top: 2%;
+  font-size: 4rem;
+  margin-top: 7%;
 }
 .headText p {
   text-align: left;
+  font-size: 1.5rem;
   word-wrap: break-word;
+  margin-top: 6%;
 }
 
 .gridlayout {
@@ -254,13 +258,55 @@ body {
 @media (max-width: 1020px) {
   .header,
   .gridlayout {
-    margin-top: 20%;
+    margin-top: 15%;
+  }
+  .header p {
+    text-align: center;
   }
 }
 
+@media (max-width: 900px) {
+  .header,
+  .gridlayout {
+    margin-top: 20%;
+  }
+  .header {
+    width: 90%;
+  }
+  .header p,
+  h1 {
+    text-align: center;
+  }
+}
 @media (max-width: 700px) {
   .header,
   .gridlayout {
+    margin-top: 25%;
+  }
+  .header {
+    width: 90%;
+  }
+  .header p,
+  h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .header,
+  .gridlayout {
     margin-top: 30%;
+  }
+
+  .header p,
+  h1 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .header p {
+    padding-top: 0%;
+    padding-bottom: 3%;
+  }
+  .headFooter {
+    font-size: 0.8rem;
   }
 }
