@@ -249,7 +249,39 @@ body {
   text-align: center;
   font-size: 15px;
 }
+.footer {
+  width: 100%;
+  padding: 2%;
+  margin: auto;
+  background-color: #004aad;
+  text-align: center;
+  border-top: solid;
+  border-color: #ffde59;
+}
 
+.signature {
+  color: white;
+  margin: auto;
+  font-size: 20px;
+}
+
+.signature:hover {
+  color: #ffde59;
+}
+
+.contact {
+  width: 10%;
+  color: white;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.contactIcons {
+  padding: 3%;
+}
+.contactIcons:hover {
+  color: #ffde59;
+}
 @media (max-width: 1020px) {
   .header,
   .gridlayout {
