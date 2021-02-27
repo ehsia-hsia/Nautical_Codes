@@ -238,7 +238,7 @@ body {
   filter: drop-shadow(2px 2px 2px #222);
 }
 
-.description .color {
+.description .letterName {
   padding: 0%;
   font-size: 0px;
 }
