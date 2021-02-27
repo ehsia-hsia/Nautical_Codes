@@ -180,13 +180,11 @@ body {
 .gridlayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 4rem;
-  align-items: center;
+  grid-gap: 2rem;
   padding: 2rem;
   margin: auto;
   margin-top: 10%;
   margin-bottom: 20%;
-  align-items: center;
 }
 .card {
   text-align: center;
@@ -209,29 +207,16 @@ body {
 }
 .morseNotation {
   font-size: 10rem !important;
-  height: 100px;
+  /* height: 100px; */
   padding: 0 !important;
-  margin-bottom: 100% !important;
-  line-height: 2px !important;
+  margin-bottom: 30% !important;
+  line-height: 10px !important;
   font-weight: 900;
-}
-
-#papa img,
-#quebec img,
-#sierra img,
-#tango img,
-#uniform img,
-#victor img,
-#whiskey img,
-#xray img,
-#yankee img,
-#zulu img {
-  max-width: 240px;
 }
 
 .description {
   padding: 1%;
-  height: 40%;
+  height: 100%;
   border: solid;
   border-width: 5px;
   border-color: #83191b;
