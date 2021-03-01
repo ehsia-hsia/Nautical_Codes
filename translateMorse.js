@@ -94,6 +94,48 @@ function translate() {
       case "z":
         test.push("_ _..");
         break;
+      case ".":
+        test.push("._._._");
+        break;
+      case ",":
+        test.push("_ _.._ _");
+        break;
+      case "?":
+        test.push(".._ _..");
+        break;
+      case "@":
+        test.push("._ _._.");
+        break;
+      case "1":
+        test.push("._ _ _ _");
+        break;
+      case "2":
+        test.push(".._ _ _");
+        break;
+      case "3":
+        test.push("..._ _");
+        break;
+      case "4":
+        test.push("...._");
+        break;
+      case "5":
+        test.push(".....");
+        break;
+      case "6":
+        test.push("_....");
+        break;
+      case "7":
+        test.push("_ _...");
+        break;
+      case "8":
+        test.push("_ _ _..");
+        break;
+      case "9":
+        test.push("_ _ _ _.");
+        break;
+      case "0":
+        test.push("_ _ _ _ _");
+        break;
     }
   }
 
