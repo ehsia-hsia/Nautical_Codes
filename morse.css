@@ -54,8 +54,8 @@ body {
 .custom-group {
   position: fixed;
   width: 100%;
-  height: 100px;
-  padding: 0.5%;
+  height: 60px;
+  padding: 0.3%;
   margin: auto !important;
   margin-top: 10%;
   margin-left: auto;
@@ -72,11 +72,21 @@ body {
   font-size: 1em;
   font-weight: bold;
   height: 40px;
+  margin: auto;
+}
+#motranbtn {
+  background-color: #fcca01;
+}
+#motranbtn a {
+  text-decoration: none;
+  color: white;
 }
 
 .searchBar {
   height: 40px;
-  margin: auto;
+  border: solid;
+  text-align: left;
+  margin-left: 0.5%;
 }
 
 .buttonFooter {
@@ -131,7 +141,6 @@ body {
   margin: auto;
   margin-top: 5%;
   margin-bottom: 10%;
-
   width: 90%;
   border: solid;
   border-width: 10px;

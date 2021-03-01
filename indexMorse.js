@@ -25,6 +25,7 @@ let whiskey = document.getElementById("whiskey");
 let xray = document.getElementById("xray");
 let yankee = document.getElementById("yankee");
 let zulu = document.getElementById("zulu");
+let header = document.getElementById("header");
 
 let searchBar = document.querySelector("#myInput");
 searchBar.addEventListener("keyup", morseSearch);
@@ -49,8 +50,14 @@ function morseSearch() {
       card[i].style.maxWidth = "400px";
     }
   }
+  if (!input.length == 0) {
+    header.style.display = "none";
+  } else {
+    header.style.display = "block";
+  }
 }
 
+/*translator*/
 let ogText = document.getElementById("textArea");
 let translatedText = document.getElementById("translatedArea");
 const test = [];
