@@ -14,6 +14,7 @@ body {
   background-attachment: fixed;
   background-repeat: repeat;
 }
+/* Nav Bar */
 .navbar-custom {
   width: 100vw;
 
@@ -44,10 +45,11 @@ body {
   color: grey !important;
 }
 
+/*Button Bar*/
 .colorButtons {
   position: relative;
   z-index: 99;
-  width: 100vw;
+  width: 1 00vw;
 }
 .custom-group {
   position: fixed;
@@ -77,60 +79,7 @@ body {
   margin: auto;
 }
 
-#myRedButton {
-  color: white;
-  border-color: #d02023;
-  background-color: #d02023;
-  border-radius: 0;
-}
-#myRedButton:hover {
-  background-color: rgba(175, 32, 35);
-  border-color: rgba(175, 32, 35);
-}
-
-#myBlueButton {
-  color: white;
-  border-color: black;
-  background-color: #004aad;
-  border-radius: 0;
-}
-#myBlueButton:hover {
-  background-color: rgb(1, 57, 100);
-  border-color: rgba(0, 74, 130);
-}
-#myYellowButton {
-  color: white;
-  border-color: rgb(231, 185, 1);
-  background-color: rgb(231, 185, 1);
-  border-radius: 0;
-}
-#myYellowButton:hover {
-  border-color: rgb(146, 118, 6);
-  background-color: rgb(201, 163, 10);
-}
-#myWhiteButton {
-  color: black;
-  border-color: black;
-  background-color: white;
-  border-radius: 0;
-}
-#myWhiteButton:hover {
-  border-color: grey;
-  background-color: grey;
-  color: white;
-}
-#myBlackButton {
-  color: white;
-  border-color: black;
-  background-color: black;
-  border-radius: 0;
-}
-#myBlackButton:hover {
-  border-color: rgb(88, 86, 86);
-  background-color: rgb(88, 86, 86);
-  color: white;
-}
-.headFooter {
+.buttonFooter {
   text-align: center;
   align-items: center;
   width: 100vw;
@@ -140,11 +89,12 @@ body {
   background-color: #004aad;
 }
 
-.headFooter i {
+.buttonFooter i {
   text-align: center;
   margin: auto;
-  /* font-size: 10px; */
 }
+
+/*Header*/
 .header {
   margin: auto;
   margin-top: 10%;
@@ -176,15 +126,53 @@ body {
   word-wrap: break-word;
   margin-top: 3%;
 }
-#textArea {
-  width: 50%;
-  height: 500px;
+/*Translator*/
+.transArea {
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+
+  width: 90%;
+  border: solid;
+  border-width: 10px;
+  border-color: #ffde59;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
+}
+.translateRow,
+.clearRow,
+.headingRow {
+  margin: auto;
+  width: 100%;
 }
 
-#cat {
-  font-size: 30px;
-  height: 500px;
+.headingRow {
+  text-align: center;
+  background-color: white;
+  padding: 2%;
 }
+
+#textArea {
+  height: 300px;
+  width: 100%;
+  color: black;
+  font-size: 1.5rem;
+  padding: 2%;
+}
+
+#translatedArea {
+  font-size: 30px;
+  height: 300px;
+  width: 100%;
+  font-size: 1rem;
+  padding: 2%;
+}
+
+#clear {
+  width: 100%;
+  font-size: 20px;
+}
+
+/*Morse Grid*/
 .gridlayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -192,8 +180,9 @@ body {
   padding: 2rem;
   margin: auto;
   margin-top: 5%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
+
 .card {
   text-align: center;
   max-width: 500px;
@@ -202,20 +191,8 @@ body {
   background-color: transparent;
 }
 
-.gridlayout .card img {
-  width: 100%;
-  /* padding: 3%; */
-  max-width: 500px;
-  max-height: 240px;
-  -webkit-filter: drop-shadow(3px 3px 3px #222);
-  filter: drop-shadow(3px 3px 3px #222);
-  position: relative;
-  z-index: 1;
-  margin-top: 4%;
-}
 .morseNotation {
   font-size: 10rem !important;
-  /* height: 100px; */
   padding: 0 !important;
   margin-bottom: 30% !important;
   line-height: 10px !important;
@@ -227,7 +204,7 @@ body {
   height: 100%;
   border: solid;
   border-width: 5px;
-  border-color: #83191b;
+  border-color: #004aad;
   background-color: white;
   -webkit-filter: drop-shadow(3px 3px 3px #222);
   filter: drop-shadow(3px 3px 3px #222);
@@ -235,12 +212,10 @@ body {
 }
 
 .name {
-  /* height: 100%; */
   margin: 0;
   margin-bottom: 0;
   padding: 2%;
-  /* border-radius: 10px; */
-  background-color: #d02023;
+  background-color: #004aad;
   color: white;
   -webkit-filter: drop-shadow(2px 2px 2px #222);
   filter: drop-shadow(2px 2px 2px #222);
@@ -257,6 +232,8 @@ body {
   text-align: center;
   font-size: 15px;
 }
+
+/*Footer*/
 .footer {
   width: 100%;
   padding: 2%;
@@ -290,6 +267,8 @@ body {
 .contactIcons:hover {
   color: #ffde59;
 }
+
+/* Media Q's*/
 @media (max-width: 1020px) {
   .header,
   .gridlayout {

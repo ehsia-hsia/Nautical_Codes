@@ -52,8 +52,7 @@ function morseSearch() {
 }
 
 let ogText = document.getElementById("textArea");
-
-let translatedText = document.getElementById("cat");
+let translatedText = document.getElementById("translatedArea");
 const test = [];
 
 let button = document.getElementById("submit");
@@ -61,7 +60,7 @@ button.addEventListener("click", translate);
 
 function translate() {
   ogText = ogText.value;
-  ogText.toString();
+  // ogText.toString();
   const splitText = ogText.split("");
   for (let i = 0; i < splitText.length; i++) {
     switch (splitText[i]) {
@@ -105,6 +104,6 @@ function translate() {
   }
   // test.toString();
   // test.join("");
-
+  translatedText.style.fontSize = "2rem";
   return (translatedText.innerHTML = test.join(" "));
 }
