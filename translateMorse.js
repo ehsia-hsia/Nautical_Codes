@@ -41,16 +41,58 @@ function translate() {
         test.push("....");
         break;
       case "i":
-        test.push("._");
+        test.push("..");
         break;
       case "j":
-        test.push("..");
+        test.push("._ _ _");
         break;
       case "k":
         test.push("___");
         break;
       case "l":
-        test.push(".-.");
+        test.push("._..");
+        break;
+      case "m":
+        test.push("_ _");
+        break;
+      case "n":
+        test.push("_.");
+        break;
+      case "o":
+        test.push("_ _ _");
+        break;
+      case "p":
+        test.push("._ _.");
+        break;
+      case "q":
+        test.push("_ _._");
+        break;
+      case "r":
+        test.push("._.");
+        break;
+      case "s":
+        test.push(".");
+        break;
+      case "t":
+        test.push("_");
+        break;
+      case "u":
+        test.push(".._");
+        break;
+      case "v":
+        test.push("..._");
+        break;
+      case "w":
+        test.push("._ _");
+        break;
+      case "x":
+        test.push("_.._");
+        break;
+      case "y":
+        test.push("_._ _");
+        break;
+      case "z":
+        test.push("_ _..");
         break;
     }
   }

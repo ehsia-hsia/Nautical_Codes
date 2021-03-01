@@ -140,7 +140,7 @@ body {
 /*Morse Grid*/
 .gridlayout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 3rem;
   padding: 2rem;
   margin: auto;
@@ -162,6 +162,10 @@ body {
   margin-bottom: 30% !important;
   line-height: 10px !important;
   font-weight: 900;
+  width: 100%;
+}
+.oscar {
+  font-size: 8rem !important;
 }
 
 .description {
@@ -233,6 +237,7 @@ body {
   color: black;
   font-size: 1.5rem;
   padding: 2%;
+  text-transform: lowercase;
 }
 
 #translatedArea {
