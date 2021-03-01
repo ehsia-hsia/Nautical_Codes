@@ -176,14 +176,22 @@ body {
   word-wrap: break-word;
   margin-top: 3%;
 }
+#textArea {
+  width: 50%;
+  height: 500px;
+}
 
+#cat {
+  font-size: 30px;
+  height: 500px;
+}
 .gridlayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 3rem;
   padding: 2rem;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 20%;
 }
 .card {

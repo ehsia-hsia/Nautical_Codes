@@ -26,74 +26,6 @@ let xray = document.getElementById("xray");
 let yankee = document.getElementById("yankee");
 let zulu = document.getElementById("zulu");
 
-// //COLOR ARRAYS
-// let red = [
-//   bravo,
-//   charlie,
-//   echo,
-//   foxtrot,
-//   hotel,
-//   oscar,
-//   romeo,
-//   tango,
-//   uniform,
-//   victor,
-//   whiskey,
-//   yankee,
-//   zulu,
-// ];
-// let blue = [
-//   alpha,
-//   charlie,
-//   delta,
-//   echo,
-//   golf,
-//   juliet,
-//   kilo,
-//   mike,
-//   november,
-//   papa,
-//   sierra,
-//   tango,
-//   whiskey,
-//   xray,
-//   zulu,
-// ];
-// let yellow = [delta, golf, india, kilo, oscar, quebec, romeo, yankee, zulu];
-// let white = [
-//   alpha,
-//   charlie,
-//   foxtrot,
-//   hotel,
-//   juliet,
-//   mike,
-//   november,
-//   papa,
-//   sierra,
-//   tango,
-//   uniform,
-//   victor,
-//   whiskey,
-//   xray,
-// ];
-// let black = [india, lima, zulu];
-
-//EVENT LISTENERS
-// let redButton = document.querySelector("#myRedButton");
-// redButton.addEventListener("click", Red);
-
-// let blueButton = document.querySelector("#myBlueButton");
-// blueButton.addEventListener("click", Blue);
-
-// let yellowButton = document.querySelector("#myYellowButton");
-// yellowButton.addEventListener("click", Yellow);
-
-// let whiteButton = document.querySelector("#myWhiteButton");
-// whiteButton.addEventListener("click", White);
-
-// let blackButton = document.querySelector("#myBlackButton");
-// blackButton.addEventListener("click", Black);
-
 let searchBar = document.querySelector("#myInput");
 searchBar.addEventListener("keyup", morseSearch);
 
@@ -106,7 +38,7 @@ function morseSearch() {
   let input = document.getElementById("myInput").value;
   input = input.toLowerCase();
   let card = document.getElementsByClassName("card");
-  let name = document.getElementsByClassName("name");
+  // let name = document.getElementsByClassName("name");
   let letter = document.getElementsByClassName("letterName");
 
   for (let i = 0; i < card.length; i++) {
@@ -119,97 +51,60 @@ function morseSearch() {
   }
 }
 
-// //BUTTON FUNCTIONS
-// function Red() {
-//   let input = document.getElementById("myRedButton");
-//   let card = document.getElementsByClassName("card");
-//   let name = document.getElementsByClassName("name");
-//   document.querySelector(".header").style.display = "none";
+let ogText = document.getElementById("textArea");
 
-//   for (let i = 0; i < card.length; i++) {
-//     if (!red.includes(card[i])) {
-//       card[i].style.display = "none";
-//     } else {
-//       card[i].style = "gridLayout";
-//     }
-//   }
-// }
+let translatedText = document.getElementById("cat");
+const test = [];
 
-// function Blue() {
-//   let input = document.querySelector("#myBlueButton");
-//   let card = document.getElementsByClassName("card");
-//   let name = document.getElementsByClassName("name");
-//   document.querySelector(".header").style.display = "none";
+let button = document.getElementById("submit");
+button.addEventListener("click", translate);
 
-//   for (let i = 0; i < card.length; i++) {
-//     if (!blue.includes(card[i])) {
-//       card[i].style.display = "none";
-//     } else {
-//       card[i].style = "gridLayout";
-//     }
-//   }
-// }
+function translate() {
+  ogText = ogText.value;
+  ogText.toString();
+  const splitText = ogText.split("");
+  for (let i = 0; i < splitText.length; i++) {
+    switch (splitText[i]) {
+      case "a":
+        test.push("._ ");
+        break;
+      case "b":
+        test.push("..");
+        break;
+      case "c":
+        test.push("___");
+        break;
+      case "d":
+        test.push(".-.");
+        break;
+      case "e":
+        test.push("._");
+        break;
+      case "f":
+        test.push("..");
+        break;
+      case "g":
+        test.push("___");
+        break;
+      case "h":
+        test.push(".-.");
+        break;
+      case "i":
+        test.push("._");
+        break;
+      case "j":
+        test.push("..");
+        break;
+      case "k":
+        test.push("___");
+        break;
+      case "l":
+        test.push(".-.");
+        break;
+    }
+  }
+  // test.toString();
+  // test.join("");
 
-// function Yellow() {
-//   let input = document.getElementById("myYellowButton");
-//   let card = document.getElementsByClassName("card");
-//   let name = document.getElementsByClassName("name");
-//   document.querySelector(".header").style.display = "none";
-
-//   for (let i = 0; i < card.length; i++) {
-//     if (!yellow.includes(card[i])) {
-//       card[i].style.display = "none";
-//     } else {
-//       card[i].style = "gridLayout";
-//     }
-//   }
-// }
-
-// function White() {
-//   let input = document.getElementById("myWhiteButton");
-//   let card = document.getElementsByClassName("card");
-//   let name = document.getElementsByClassName("name");
-//   document.querySelector(".header").style.display = "none";
-
-//   for (let i = 0; i < card.length; i++) {
-//     if (!white.includes(card[i])) {
-//       card[i].style.display = "none";
-//     } else {
-//       card[i].style = "gridLayout";
-//     }
-//   }
-// }
-
-// function Black() {
-//   let input = document.getElementById("myBlackButton");
-//   let card = document.getElementsByClassName("card");
-//   let name = document.getElementsByClassName("name");
-//   document.querySelector(".header").style.display = "none";
-
-//   for (let i = 0; i < card.length; i++) {
-//     if (!black.includes(card[i])) {
-//       card[i].style.display = "none";
-//     } else {
-//       card[i].style = "block";
-//       document.getElementById("india").style.maxWidth = "400px";
-//       document.getElementById("lima").style.maxWidth = "400px";
-//     }
-//   }
-// }
-
-// function All() {
-//   let input = document.getElementById("myAlButton");
-//   // input = input.toLowerCase();
-//   let card = document.getElementsByClassName("card");
-//   let name = document.getElementsByClassName("name");
-//   let grid = document.querySelector(".gridlayout");
-//   let header = (document.querySelector(".header").style.display = "block");
-
-//   for (let i = 0; i < card.length; i++) {
-//     if (!card[i].innerHTML.includes("")) {
-//       card[i].style.display = "none";
-//     } else {
-//       card[i].style = "gridLayout";
-//     }
-//   }
-// }
+  return (translatedText.innerHTML = test.join(" "));
+}
