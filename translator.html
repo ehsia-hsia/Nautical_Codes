@@ -1,0 +1,140 @@
+<!DOCTYPE hmtl>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Morse Code</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- CSS and Fonts -->
+    <link rel="stylesheet" href="morse.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/65916e7e93.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-custom sticky-top navbar-expand-lg navbar-light sm-light"
+    >
+      <a class="navbar-brand" target="_blank" href="index.html">
+        Nautical Codes
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#sem"
+              >Semaphore<span class="sr-only">(flashart)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#mor"
+              >Morse Code<span class="sr-only">(blackwhite)</span></a
+            >
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#flags">
+              Flags <span class="sr-only">(contact)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Button Bar-->
+    <div
+      class="btn-toolbar mb-3 colorButtons fixed-top"
+      role="toolbar"
+      aria-label="Toolbar with button groups"
+    >
+      <div
+        class="btn-group mr-1 custom-group-morse row"
+        role="group"
+        aria-label="First group"
+      >
+        <!-- <input
+          class="searchBar col-lg-1.5 btn"
+          type="text"
+          id="myInput"
+          onkeyup="morseSearch()"
+          placeholder="Search for codes by letter..."
+        /> -->
+        <button id="mohomebtn" class="btn btn-secondary col-lg-1.5">
+          <a href="morse.html"> Back</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="transArea">
+      <div class="row headingRow">
+        <h1 class="col-lg-12" id="transArea">Translator</h1>
+      </div>
+      <div class="row translateRow">
+        <textarea
+          placeholder="Type your message here..."
+          class="col-lg-5"
+          id="textArea"
+          type="text"
+        ></textarea>
+        <button class="col-lg-2" id="submit">Translate</button>
+        <textarea
+          placeholder="Morse code translation will appear here."
+          class="col-lg-5"
+          id="translatedArea"
+        ></textarea>
+        <div class="row clearRow">
+          <button id="clear">Clear</button>
+        </div>
+      </div>
+    </div>
+    <script src="translateMorse.js" charset="utf-8"></script>
+  </body>
+</html>
