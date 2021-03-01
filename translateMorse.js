@@ -3,12 +3,16 @@ let ogText = document.getElementById("textArea");
 let translatedText = document.getElementById("translatedArea");
 const test = [];
 
-let button = document.getElementById("submit");
-button.addEventListener("click", translate);
+let buttonSubmit = document.getElementById("submit");
+buttonSubmit.addEventListener("click", translate);
+
+let buttonClear = document.getElementById("clear");
+buttonClear.addEventListener("click", clear);
 
 function translate() {
   ogText = ogText.value;
   // ogText.toString();
+  //   if (!ogText.length == 0) {
   const splitText = ogText.split("");
   for (let i = 0; i < splitText.length; i++) {
     switch (splitText[i]) {
@@ -16,25 +20,25 @@ function translate() {
         test.push("._ ");
         break;
       case "b":
-        test.push("..");
+        test.push("_...");
         break;
       case "c":
-        test.push("___");
+        test.push("_._.");
         break;
       case "d":
-        test.push(".-.");
+        test.push("_..");
         break;
       case "e":
-        test.push("._");
+        test.push(".");
         break;
       case "f":
-        test.push("..");
+        test.push(".._.");
         break;
       case "g":
-        test.push("___");
+        test.push("_ _ .");
         break;
       case "h":
-        test.push(".-.");
+        test.push("....");
         break;
       case "i":
         test.push("._");
@@ -50,8 +54,16 @@ function translate() {
         break;
     }
   }
+
   // test.toString();
   // test.join("");
   translatedText.style.fontSize = "2rem";
-  return (translatedText.innerHTML = test.join(" "));
+  return (translatedText.innerHTML = test.join("    "));
+}
+
+function clear() {
+  if (!ogText.length == "0") {
+    document.getElementById("translatedArea").value = "";
+    document.getElementById("textArea").value = "";
+  }
 }

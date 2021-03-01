@@ -89,34 +89,11 @@
         </ul>
       </div>
     </nav>
-    <!--Button Bar-->
-    <div
-      class="btn-toolbar mb-3 colorButtons fixed-top"
-      role="toolbar"
-      aria-label="Toolbar with button groups"
-    >
-      <div
-        class="btn-group mr-1 custom-group-morse row"
-        role="group"
-        aria-label="First group"
-      >
-        <!-- <input
-          class="searchBar col-lg-1.5 btn"
-          type="text"
-          id="myInput"
-          onkeyup="morseSearch()"
-          placeholder="Search for codes by letter..."
-        /> -->
-        <button id="mohomebtn" class="btn btn-secondary col-lg-1.5">
-          <a href="morse.html"> Back</a>
-        </button>
-      </div>
-    </div>
 
+    <div class="row headingRow">
+      <h1 class="col-lg-12" id="transArea">Morse Code Translator</h1>
+    </div>
     <div class="transArea">
-      <div class="row headingRow">
-        <h1 class="col-lg-12" id="transArea">Translator</h1>
-      </div>
       <div class="row translateRow">
         <textarea
           placeholder="Type your message here..."
@@ -124,7 +101,9 @@
           id="textArea"
           type="text"
         ></textarea>
-        <button class="col-lg-2" id="submit">Translate</button>
+        <button class="col-lg-2" id="submit">
+          <p>Translate <i class="fas fa-arrow-right"></i></p>
+        </button>
         <textarea
           placeholder="Morse code translation will appear here."
           class="col-lg-5"
@@ -135,6 +114,24 @@
         </div>
       </div>
     </div>
+
+    <!-- Button Bar
+    <div
+      class="btn-toolbar mb-3 fixed-bottom"
+      role="toolbar"
+      aria-label="Toolbar with button groups"
+    >
+      <div
+        class="btn-group mr-1 custom-group-morse row"
+        role="group"
+        aria-label="First group"
+      >
+        <button id="mohomebtn" class="btn btn-secondary col-lg-12">
+          <a href="morse.html"> Back</a>
+        </button>
+      </div>
+    </div> -->
+
     <script src="translateMorse.js" charset="utf-8"></script>
   </body>
 </html>

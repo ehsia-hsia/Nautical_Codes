@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: "Century Gothic";
-  background-image: url(Images/head4.png);
+  /* background-image: url(Images/head4.png); */
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat;
@@ -55,7 +55,7 @@ body {
   position: fixed;
   width: 100%;
   height: 60px;
-  padding: 0.3%;
+  padding: 0.5%;
   margin: auto !important;
   margin-top: 10%;
   margin-left: auto;
@@ -63,9 +63,9 @@ body {
   margin-bottom: 0.5%;
   background-color: white;
   box-sizing: border-box;
-  border: solid;
+  border-bottom: solid;
   border-width: 5px;
-  border-color: #ffde59;
+  border-color: black;
 }
 
 .btn {
@@ -75,7 +75,7 @@ body {
   margin: auto;
 }
 #motranbtn {
-  background-color: #fcca01;
+  background-color: black;
 }
 #motranbtn a {
   text-decoration: none;
@@ -201,7 +201,7 @@ body {
 /*Translator*/
 .transArea {
   margin: auto;
-  margin-top: 85px;
+  margin-top: 20px;
   margin-bottom: 10%;
   width: 90%;
   border: solid;
@@ -218,10 +218,15 @@ body {
 
 .headingRow {
   text-align: center;
-  background-color: white;
-  padding: 2%;
+  padding: 1%;
+  border-bottom: solid;
+  border-width: 3px;
+  border-color: #004aad;
 }
 
+.headingRow h1 {
+  font-size: 3rem;
+}
 #textArea {
   height: 300px;
   width: 100%;
@@ -237,6 +242,18 @@ body {
   font-size: 1rem;
   padding: 2%;
 }
+#submit {
+  font-size: 30px;
+  text-align: center;
+  background-color: #e3efff;
+  border: solid;
+  border-width: 3px;
+  border-color: #004aad;
+}
+#submit:hover {
+  background-color: #004aad;
+  color: white;
+}
 
 #clear {
   width: 100%;
@@ -244,15 +261,14 @@ body {
 }
 
 .custom-group-morse {
-  position: fixed;
+  /* position: fixed; */
   width: 20%;
-  height: 80px;
+  height: 70px;
   padding: 0.3%;
-  margin: auto !important;
-  margin-top: 10%;
-  margin-bottom: 0.5%;
+  /* margin: auto !important; */
+  /* margin-top: 10%; */
+  margin-bottom: 0;
   background-color: white;
-  box-sizing: border-box;
   border: solid;
   border-width: 5px;
   border-color: #ffde59;
@@ -260,7 +276,7 @@ body {
 
 .custom-group-morse #mohomebtn {
   background-color: #fcca01;
-  width: 100px;
+  width: 70px;
 }
 
 #mohomebtn a {
