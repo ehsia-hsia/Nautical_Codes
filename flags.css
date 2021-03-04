@@ -9,10 +9,10 @@
 body {
   margin: 0;
   font-family: "Century Gothic";
-  background-image: url(Images/head4.png);
+  /* background-image: url(Images/head4.png);
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: repeat;
+  background-repeat: repeat; */
 }
 .navbar-custom {
   width: 100vw;
@@ -225,7 +225,7 @@ body {
   /* height: 40%; */
   border: solid;
   border-width: 5px;
-  border-color: rgb(6, 67, 114);
+  border-color: #004aad;
   background-color: white;
   -webkit-filter: drop-shadow(3px 3px 3px #222);
   filter: drop-shadow(3px 3px 3px #222);
@@ -238,7 +238,7 @@ body {
   margin-bottom: 0;
   padding: 2%;
   /* border-radius: 10px; */
-  background-color: rgb(6, 67, 114);
+  background-color: #004aad;
   color: white;
   -webkit-filter: drop-shadow(2px 2px 2px #222);
   filter: drop-shadow(2px 2px 2px #222);
