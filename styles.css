@@ -1,30 +1,29 @@
 body {
   /* padding: 20px; */
-  font-family: 'Century Gothic';
-  background-image: url(Images/head.png); 
-  background-size: cover; 
-   background-attachment: fixed;
-  background-repeat: repeat;  
- 
+  font-family: "Century Gothic";
+  background-image: url(Images/head.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
 }
 
 .navbar-custom {
   background-color: white;
   border-bottom: solid;
   border-width: 5px;
-  border-color: #FFDE59;
+  border-color: #ffde59;
 }
 
 .navbar-brand {
   color: black !important;
   font-size: 40px;
-  font-family: 'Century Gothic';
+  font-family: "Century Gothic";
 }
 
 .nav-link {
-color: black !important;
-font-size: 25px;
- font-family: 'Century Gothic';
+  color: black !important;
+  font-size: 25px;
+  font-family: "Century Gothic";
 }
 
 .nav-link:hover {
@@ -35,7 +34,7 @@ font-size: 25px;
   color: grey !important;
 }
 
-.header{
+.header {
   text-align: left;
   padding-bottom: 10px;
   padding: 3%;
@@ -43,23 +42,24 @@ font-size: 25px;
   background-color: white;
   border: solid;
   border-width: 10px;
-  border-color: #004AAD;
+  border-color: #004aad;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
-
 }
-.big-heading{
+.big-heading {
   font-size: 80px;
   padding-right: 1%;
 }
 
-.aboutpara{
+.aboutpara {
   font-size: 20px;
   margin-top: 8%;
   word-wrap: break-word;
   text-align: left;
 }
 
-.sem-flex-grid, .morse-flex-grid, .flag-flex-grid{
+.sem-flex-grid,
+.morse-flex-grid,
+.flag-flex-grid {
   display: flex;
   flex: 1;
   padding-bottom: 10px;
@@ -67,46 +67,53 @@ font-size: 25px;
   border-width: 1px;
   border-color: black;
   width: 95%;
-  padding:3%;
+  padding: 3%;
   margin: 3% auto;
-  background-color: white;;
+  background-color: white;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.535);
   border: solid;
   border-width: 10px;
 }
 
-.sem-flex-grid, .flag-flex-grid{
+.sem-flex-grid,
+.flag-flex-grid {
   text-align: left;
 }
-.morse-flex-grid{
+.morse-flex-grid {
   text-align: right;
-  
 }
 .col {
   flex: 1;
   margin: auto;
 }
 
-.semimage, .morseimage, .flagimage{
+.semimage,
+.morseimage,
+.flagimage {
   width: 100%;
   height: 100%;
   border: solid;
   border-width: 10px;
-  box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.semimage, .sem-flex-grid{
-  border-color: #FFDE59;
+.semimage,
+.sem-flex-grid {
+  border-color: #ffde59;
   padding: 2%;
 }
-.morseimage, .morse-flex-grid{
-  border-color: #D02023;
+.morseimage,
+.morse-flex-grid {
+  border-color: #d02023;
 }
-.flagimage, .flag-flex-grid{
-  border-color: #004AAD;
+.flagimage,
+.flag-flex-grid {
+  border-color: #004aad;
 }
 
-.sem_button, .morse_button, .flag_button {
+.sem_button,
+.morse_button,
+.flag_button {
   border: solid;
   color: black;
   border-width: 3px;
@@ -116,110 +123,106 @@ font-size: 25px;
   font-weight: bold;
   margin: 8px 2px 40px 2px;
   cursor: pointer;
-  box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.2);
-
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
-.sem_button{
+.sem_button {
   border-color: white;
-  background-color: #FFDE59;
-  color:white;
+  background-color: #ffde59;
+  color: white;
 }
-.sem_button:hover{
+.sem_button:hover {
   color: black;
-  border-color:#FFDE59;
-  background-color:rgb(255, 222, 89);
+  border-color: #ffde59;
+  background-color: rgb(255, 222, 89);
 }
 
-.morse_button{
+.morse_button {
   border-color: white;
   color: white;
-  background-color:rgba(208, 32, 35);
+  background-color: rgba(208, 32, 35);
 }
-.morse_button:hover{
-  border-color: #D02023;
-  color:black;
-  background-color:rgba(208, 32, 35, 0.1);
-
+.morse_button:hover {
+  border-color: #d02023;
+  color: black;
+  background-color: rgba(208, 32, 35, 0.1);
 }
 
-.flag_button:hover{
-  color:black;
-  border-color:#004AAD;
+.flag_button:hover {
+  color: black;
+  border-color: #004aad;
   background-color: rgba(0, 74, 173, 0.2);
 }
 
-.flag_button{
+.flag_button {
   background-color: rgba(0, 74, 173);
   color: white;
   border-color: white;
 }
 
-
-.sectiontitle{
+.sectiontitle {
   font-size: 60px;
   padding-bottom: 15px;
   margin: auto;
 }
-.description{
+.description {
   font-size: 20px;
   padding-right: 3%;
 }
 
-.footer{
+.footer {
   width: 100%;
-  padding: 2% ;
+  padding: 2%;
   margin: auto;
-  background-color: #004AAD;
+  background-color: #004aad;
   text-align: center;
   border-top: solid;
-  border-color:#FFDE59;
+  border-color: #ffde59;
 }
 
-.signature{
+.signature {
   color: white;
   margin: auto;
-  font-size: 20px;;
+  font-size: 20px;
 }
 
-.signature:hover{
-  color: #FFDE59;
+.signature:hover {
+  color: #ffde59;
 }
 
-.contact{
+.contact {
   width: 10%;
   color: white;
   margin: auto;
   margin-top: 1%;
 }
 
-.contactIcons{
+.contactIcons {
   padding: 3%;
 }
-.contactIcons:hover{
-  color: #FFDE59;
+.contactIcons:hover {
+  color: #ffde59;
 }
 
 @media (max-width: 900px) {
-  .sem-flex-grid, .morse-flex-grid, .flag-flex-grid{
+  .sem-flex-grid,
+  .morse-flex-grid,
+  .flag-flex-grid {
     display: block;
     text-align: center;
     padding: 4%;
   }
-  .sectiontitle, .description{
+  .sectiontitle,
+  .description {
     padding-left: 0px;
     padding: 2%;
   }
- .header, .aboutpara{
+  .header,
+  .aboutpara {
     text-align: center;
-    }
-  .icon{
+  }
+  .icon {
     text-align: center;
     padding: 5%;
   }
-  }
-
-
-
-
-
+}
