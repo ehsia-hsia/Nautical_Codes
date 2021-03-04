@@ -273,13 +273,17 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   .header,
   .gridlayout {
     margin-top: 20%;
+    justify-items: center;
   }
   .header {
     width: 90%;
+  }
+  .card {
+    width: 100%;
   }
   .header p,
   h1 {
@@ -294,6 +298,10 @@ body {
   .header,
   .gridlayout {
     margin-top: 25%;
+    justify-items: center;
+  }
+  .card {
+    width: 100%;
   }
   .header {
     width: 90%;
@@ -312,7 +320,9 @@ body {
   .gridlayout {
     margin-top: 30%;
   }
-
+  .name {
+    font-size: 3rem;
+  }
   .header p,
   h1 {
     text-align: center;
