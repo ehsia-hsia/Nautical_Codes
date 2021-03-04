@@ -178,10 +178,12 @@ body {
 
 .gridlayout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5rem;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
   margin: auto;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -298,10 +300,14 @@ body {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 930px) {
   .header,
   .gridlayout {
     margin-top: 20%;
+    justify-items: center;
+  }
+  .card {
+    width: 100%;
   }
   .header {
     width: 90%;
@@ -315,6 +321,10 @@ body {
   .header,
   .gridlayout {
     margin-top: 25%;
+    justify-items: center;
+  }
+  .card {
+    width: 100%;
   }
   .header {
     width: 90%;
