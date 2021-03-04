@@ -1,7 +1,7 @@
 /*translator*/
 let ogText = document.getElementById("textArea");
 let translatedText = document.getElementById("translatedArea");
-const test = [];
+let transTextArray = [];
 
 let buttonSubmit = document.getElementById("submit");
 buttonSubmit.addEventListener("click", translate);
@@ -17,137 +17,138 @@ function translate() {
   for (let i = 0; i < splitText.length; i++) {
     switch (splitText[i]) {
       case "a":
-        test.push("._ ");
+        transTextArray.push("._ ");
         break;
       case "b":
-        test.push("_...");
+        transTextArray.push("_...");
         break;
       case "c":
-        test.push("_._.");
+        transTextArray.push("_._.");
         break;
       case "d":
-        test.push("_..");
+        transTextArray.push("_..");
         break;
       case "e":
-        test.push(".");
+        transTextArray.push(".");
         break;
       case "f":
-        test.push(".._.");
+        transTextArray.push(".._.");
         break;
       case "g":
-        test.push("_ _ .");
+        transTextArray.push("_ _ .");
         break;
       case "h":
-        test.push("....");
+        transTextArray.push("....");
         break;
       case "i":
-        test.push("..");
+        transTextArray.push("..");
         break;
       case "j":
-        test.push("._ _ _");
+        transTextArray.push("._ _ _");
         break;
       case "k":
-        test.push("___");
+        transTextArray.push("___");
         break;
       case "l":
-        test.push("._..");
+        transTextArray.push("._..");
         break;
       case "m":
-        test.push("_ _");
+        transTextArray.push("_ _");
         break;
       case "n":
-        test.push("_.");
+        transTextArray.push("_.");
         break;
       case "o":
-        test.push("_ _ _");
+        transTextArray.push("_ _ _");
         break;
       case "p":
-        test.push("._ _.");
+        transTextArray.push("._ _.");
         break;
       case "q":
-        test.push("_ _._");
+        transTextArray.push("_ _._");
         break;
       case "r":
-        test.push("._.");
+        transTextArray.push("._.");
         break;
       case "s":
-        test.push(".");
+        transTextArray.push(".");
         break;
       case "t":
-        test.push("_");
+        transTextArray.push("_");
         break;
       case "u":
-        test.push(".._");
+        transTextArray.push(".._");
         break;
       case "v":
-        test.push("..._");
+        transTextArray.push("..._");
         break;
       case "w":
-        test.push("._ _");
+        transTextArray.push("._ _");
         break;
       case "x":
-        test.push("_.._");
+        transTextArray.push("_.._");
         break;
       case "y":
-        test.push("_._ _");
+        transTextArray.push("_._ _");
         break;
       case "z":
-        test.push("_ _..");
+        transTextArray.push("_ _..");
         break;
       case ".":
-        test.push("._._._");
+        transTextArray.push("._._._");
         break;
       case ",":
-        test.push("_ _.._ _");
+        transTextArray.push("_ _.._ _");
         break;
       case "?":
-        test.push(".._ _..");
+        transTextArray.push(".._ _..");
         break;
       case "@":
-        test.push("._ _._.");
+        transTextArray.push("._ _._.");
         break;
       case "1":
-        test.push("._ _ _ _");
+        transTextArray.push("._ _ _ _");
         break;
       case "2":
-        test.push(".._ _ _");
+        transTextArray.push(".._ _ _");
         break;
       case "3":
-        test.push("..._ _");
+        transTextArray.push("..._ _");
         break;
       case "4":
-        test.push("...._");
+        transTextArray.push("...._");
         break;
       case "5":
-        test.push(".....");
+        transTextArray.push(".....");
         break;
       case "6":
-        test.push("_....");
+        transTextArray.push("_....");
         break;
       case "7":
-        test.push("_ _...");
+        transTextArray.push("_ _...");
         break;
       case "8":
-        test.push("_ _ _..");
+        transTextArray.push("_ _ _..");
         break;
       case "9":
-        test.push("_ _ _ _.");
+        transTextArray.push("_ _ _ _.");
         break;
       case "0":
-        test.push("_ _ _ _ _");
+        transTextArray.push("_ _ _ _ _");
         break;
     }
   }
 
-  // test.toString();
-  // test.join("");
+  // transTextArray.toString();
+  // transTextArray.join("");
   translatedText.style.fontSize = "2rem";
-  return (translatedText.innerHTML = test.join("    "));
+  return (translatedText.innerHTML = transTextArray.join("    "));
 }
 
 function clear() {
-  if (!ogText.length == "0") {
-    document.getElementById("translatedArea").value = "";
-    document.getElementById("textArea").value = "";
-  }
+  ogText = document.getElementById("textArea");
+  translatedText = document.getElementById("translatedArea");
+  transTextArray = [];
+  ogText.value = "";
+  translatedText.innerHTML = "";
 }
