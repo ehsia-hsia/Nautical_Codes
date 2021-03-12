@@ -47,4 +47,116 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <body>
+    <nav
+      class="navbar navbar-custom sticky-top navbar-expand-lg navbar-light sm-light"
+    >
+      <a class="navbar-brand" target="_blank" href="index.html">
+        Nautical Codes
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="sem.html"
+              >Semaphore<span class="sr-only">(flashart)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="morse.html"
+              >Morse Code<span class="sr-only">(blackwhite)</span></a
+            >
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#flags">
+              Flags <span class="sr-only">(contact)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      class="btn-toolbar mb-3 colorButtons fixed-top"
+      role="toolbar"
+      aria-label="Toolbar with button groups"
+    >
+      <div
+        class="btn-group mr-2 custom-group row"
+        role="group"
+        aria-label="First group"
+      >
+        <input
+          class="searchBar"
+          type="text"
+          id="myInput"
+          onkeyup="flagSearch()"
+          placeholder="Search for flags..."
+        />
+        <button
+          type="button"
+          class="btn btn-secondary col-lg-1.5"
+          id="myRedButton"
+        >
+          Red Flags
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary col-lg-1.5"
+          id="myBlueButton"
+        >
+          Blue Flags
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary col-lg-1.5"
+          id="myYellowButton"
+        >
+          Yellow Flags
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary col-lg-1.5"
+          id="myWhiteButton"
+        >
+          White Flags
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary col-lg-1.5"
+          id="myBlackButton"
+        >
+          Black Flags
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary col-lg-1.5"
+          id="myAllButton"
+          onclick="All()"
+        >
+          All Flags
+        </button>
+
+        <div class="headFooter row">
+          <i
+            >Search by flag meanings, names, or sort through the flags by
+            color.</i
+          >
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
