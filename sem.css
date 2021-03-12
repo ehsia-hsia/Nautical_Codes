@@ -1,0 +1,354 @@
+/*Colors
+#FFDE59--yellow 
+#004AAD -- blue
+#D02023 -- red
+
+
+*/
+
+body {
+  margin: 0;
+  font-family: "Century Gothic";
+  /* background-image: url(Images/head4.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat; */
+}
+.navbar-custom {
+  width: 100vw;
+
+  background-color: white;
+  border-bottom: solid;
+  border-width: 5px;
+  border-color: #ffde59;
+}
+
+.navbar-brand {
+  color: black !important;
+  padding-left: 0.5%;
+  font-size: 40px;
+  font-family: "Century Gothic";
+}
+
+.nav-link {
+  color: black !important;
+  font-size: 25px;
+  font-family: "Century Gothic";
+}
+
+.nav-link:hover {
+  color: grey !important;
+}
+
+.navbar-brand:hover {
+  color: grey !important;
+}
+
+.colorButtons {
+  position: relative;
+  z-index: 99;
+  width: 100vw;
+}
+.custom-group {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 0.5%;
+  margin: auto !important;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5%;
+  background-color: white;
+  box-sizing: border-box;
+  border: solid;
+  border-width: 5px;
+  border-color: #ffde59;
+}
+
+.btn {
+  font-size: 1em;
+  font-weight: bold;
+  height: 40px;
+}
+
+.searchBar {
+  height: 40px;
+}
+
+#myRedButton {
+  color: white;
+  border-color: #d02023;
+  background-color: #d02023;
+  border-radius: 0;
+}
+#myRedButton:hover {
+  background-color: rgba(175, 32, 35);
+  border-color: rgba(175, 32, 35);
+}
+
+#myBlueButton {
+  color: white;
+  border-color: black;
+  background-color: #004aad;
+  border-radius: 0;
+}
+#myBlueButton:hover {
+  background-color: rgb(1, 57, 100);
+  border-color: rgba(0, 74, 130);
+}
+#myYellowButton {
+  color: white;
+  border-color: rgb(231, 185, 1);
+  background-color: rgb(231, 185, 1);
+  border-radius: 0;
+}
+#myYellowButton:hover {
+  border-color: rgb(146, 118, 6);
+  background-color: rgb(201, 163, 10);
+}
+#myWhiteButton {
+  color: black;
+  border-color: black;
+  background-color: white;
+  border-radius: 0;
+}
+#myWhiteButton:hover {
+  border-color: grey;
+  background-color: grey;
+  color: white;
+}
+#myBlackButton {
+  color: white;
+  border-color: black;
+  background-color: black;
+  border-radius: 0;
+}
+#myBlackButton:hover {
+  border-color: rgb(88, 86, 86);
+  background-color: rgb(88, 86, 86);
+  color: white;
+}
+.headFooter {
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+  padding: 0.5%;
+  margin-top: 0.5%;
+  color: white;
+  background-color: #004aad;
+}
+
+.headFooter i {
+  text-align: center;
+  margin: auto;
+  /* font-size: 10px; */
+}
+.header {
+  margin: auto;
+  margin-top: 10%;
+  width: 90%;
+  height: 40%;
+  display: block;
+  background-color: white;
+  border: solid;
+  border-width: 10px;
+  border-color: #004aad;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
+}
+
+.headText {
+  padding: 3%;
+  padding-bottom: 0;
+  word-wrap: break-word;
+  margin-bottom: 0%;
+}
+
+.headText h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 3%;
+}
+.headText p {
+  text-align: left;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  margin-top: 3%;
+}
+
+.gridlayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 5rem;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  align-items: center;
+}
+.card {
+  text-align: center;
+  max-width: 500px;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.gridlayout .card img {
+  width: 100%;
+  /* padding: 3%; */
+  max-width: 500px;
+  max-height: 240px;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(3px 3px 3px #222);
+  position: relative;
+  z-index: 1;
+  margin-top: 4%;
+}
+
+#papa img,
+#quebec img,
+#sierra img,
+#tango img,
+#uniform img,
+#victor img,
+#whiskey img,
+#xray img,
+#yankee img,
+#zulu img {
+  max-width: 240px;
+}
+
+.description {
+  padding: 1%;
+  /* height: 40%; */
+  border: solid;
+  border-width: 5px;
+  border-color: #004aad;
+  background-color: white;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(3px 3px 3px #222);
+  word-wrap: break-all;
+}
+
+.name {
+  /* height: 100%; */
+  margin: 0;
+  margin-bottom: 0;
+  padding: 2%;
+  /* border-radius: 10px; */
+  background-color: #004aad;
+  color: white;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+.description .color {
+  padding: 0%;
+  font-size: 0px;
+}
+
+.description p {
+  margin: auto;
+  padding: 5%;
+  text-align: center;
+  font-size: 15px;
+}
+.footer {
+  width: 100%;
+  padding: 2%;
+  margin: auto;
+  background-color: #004aad;
+  text-align: center;
+  border-top: solid;
+  border-color: #ffde59;
+}
+
+.signature {
+  color: white;
+  margin: auto;
+  font-size: 20px;
+}
+
+.signature:hover {
+  color: #ffde59;
+}
+
+.contact {
+  width: 10%;
+  color: white;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.contactIcons {
+  padding: 3%;
+}
+.contactIcons:hover {
+  color: #ffde59;
+}
+@media (max-width: 1020px) {
+  .header,
+  .gridlayout {
+    margin-top: 15%;
+  }
+  .header p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 930px) {
+  .header,
+  .gridlayout {
+    margin-top: 20%;
+    justify-items: center;
+  }
+  .card {
+    width: 100%;
+  }
+  .header {
+    width: 90%;
+  }
+  .header p,
+  h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .header,
+  .gridlayout {
+    margin-top: 25%;
+    justify-items: center;
+  }
+  .card {
+    width: 100%;
+  }
+  .header {
+    width: 90%;
+  }
+  .header p,
+  h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .header,
+  .gridlayout {
+    margin-top: 30%;
+  }
+
+  .header p,
+  h1 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .header p {
+    padding-bottom: 5%;
+  }
+  .headFooter {
+    font-size: 0.8rem;
+  }
+}
