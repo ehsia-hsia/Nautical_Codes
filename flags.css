@@ -290,6 +290,10 @@ body {
 .contactIcons:hover {
   color: #ffde59;
 }
+.hidden {
+  display: none;
+}
+
 @media (max-width: 1020px) {
   .header,
   .gridlayout {
