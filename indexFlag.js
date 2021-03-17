@@ -26,7 +26,30 @@ let xray = document.getElementById("xray");
 let yankee = document.getElementById("yankee");
 let zulu = document.getElementById("zulu");
 
+// VARIABLES
+let card = document.getElementsByClassName("card");
+let name = document.getElementsByClassName("name");
 let header = document.querySelector(".header");
+
+//EVENT LISTENERS
+let redButton = document.querySelector("#myRedButton");
+redButton.addEventListener("click", Red);
+
+let blueButton = document.querySelector("#myBlueButton");
+blueButton.addEventListener("click", Blue);
+
+let yellowButton = document.querySelector("#myYellowButton");
+yellowButton.addEventListener("click", Yellow);
+
+let whiteButton = document.querySelector("#myWhiteButton");
+whiteButton.addEventListener("click", White);
+
+let blackButton = document.querySelector("#myBlackButton");
+blackButton.addEventListener("click", Black);
+
+let searchBar = document.querySelector("#myInput");
+searchBar.addEventListener("keyup", flagSearch);
+
 //COLOR ARRAYS
 let red = [
   bravo,
@@ -79,140 +102,90 @@ let white = [
 ];
 let black = [india, lima, zulu];
 
-//EVENT LISTENERS
-let redButton = document.querySelector("#myRedButton");
-redButton.addEventListener("click", Red);
+//Filter FUNCTIONS
 
-let blueButton = document.querySelector("#myBlueButton");
-blueButton.addEventListener("click", Blue);
+function hideHeader() {
+  document.querySelector(".header").classList.add("hidden");
+}
 
-let yellowButton = document.querySelector("#myYellowButton");
-yellowButton.addEventListener("click", Yellow);
-
-let whiteButton = document.querySelector("#myWhiteButton");
-whiteButton.addEventListener("click", White);
-
-let blackButton = document.querySelector("#myBlackButton");
-blackButton.addEventListener("click", Black);
-
-let searchBar = document.querySelector("#myInput");
-searchBar.addEventListener("keyup", flagSearch);
-
-// VARIABLES
-let card = document.getElementsByClassName("card");
-let name = document.getElementsByClassName("name");
+function hideCard(card) {
+  card.classList.add("hidden");
+}
+function resetHidden(card) {
+  card.classList.remove("hidden");
+}
 
 //SEARCH BAR
 function flagSearch() {
-  header.classList.add("hidden");
   let input = document.getElementById("myInput").value;
   input = input.toLowerCase();
-  let card = document.getElementsByClassName("card");
-  let name = document.getElementsByClassName("name");
-
   for (let i = 0; i < card.length; i++) {
     if (!card[i].innerHTML.toLowerCase().includes(input)) {
-      card[i].style.display = "none";
+      hideCard(card[i]);
+      hideHeader();
     } else if (input == "") {
-      header.classList.remove("hidden");
-    } else {
-      card[i].style = "gridLayout";
-      card[i].style.maxWidth = "400px";
+      resetHidden(header);
+      resetHidden(card[i]);
     }
   }
 }
 
-//BUTTON FUNCTIONS
+//BUTTONS
 function Red() {
-  let input = document.getElementById("myRedButton");
-  let card = document.getElementsByClassName("card");
-  let name = document.getElementsByClassName("name");
-  document.querySelector(".header").style.display = "none";
-
+  hideHeader();
   for (let i = 0; i < card.length; i++) {
+    resetHidden(card[i]);
     if (!red.includes(card[i])) {
-      card[i].style.display = "none";
-    } else {
-      card[i].style = "gridLayout";
+      hideCard(card[i]);
     }
   }
 }
 
 function Blue() {
-  let input = document.querySelector("#myBlueButton");
-  let card = document.getElementsByClassName("card");
-  let name = document.getElementsByClassName("name");
-  document.querySelector(".header").style.display = "none";
-
+  hideHeader();
   for (let i = 0; i < card.length; i++) {
+    resetHidden(card[i]);
     if (!blue.includes(card[i])) {
-      card[i].style.display = "none";
-    } else {
-      card[i].style = "gridLayout";
+      hideCard(card[i]);
     }
   }
 }
 
 function Yellow() {
-  let input = document.getElementById("myYellowButton");
-  let card = document.getElementsByClassName("card");
-  let name = document.getElementsByClassName("name");
-  document.querySelector(".header").style.display = "none";
-
+  hideHeader();
   for (let i = 0; i < card.length; i++) {
+    resetHidden(card[i]);
     if (!yellow.includes(card[i])) {
-      card[i].style.display = "none";
-    } else {
-      card[i].style = "gridLayout";
+      hideCard(card[i]);
     }
   }
 }
 
 function White() {
-  let input = document.getElementById("myWhiteButton");
-  let card = document.getElementsByClassName("card");
-  let name = document.getElementsByClassName("name");
-  document.querySelector(".header").style.display = "none";
-
+  hideHeader();
   for (let i = 0; i < card.length; i++) {
+    resetHidden(card[i]);
     if (!white.includes(card[i])) {
-      card[i].style.display = "none";
-    } else {
-      card[i].style = "gridLayout";
+      hideCard(card[i]);
     }
   }
 }
 
 function Black() {
-  let input = document.getElementById("myBlackButton");
-  let card = document.getElementsByClassName("card");
-  let name = document.getElementsByClassName("name");
-  document.querySelector(".header").style.display = "none";
+  hideHeader();
 
   for (let i = 0; i < card.length; i++) {
+    resetHidden(card[i]);
+
     if (!black.includes(card[i])) {
-      card[i].style.display = "none";
-    } else {
-      card[i].style = "block";
-      document.getElementById("india").style.maxWidth = "400px";
-      document.getElementById("lima").style.maxWidth = "400px";
+      hideCard(card[i]);
     }
   }
 }
 
 function All() {
-  let input = document.getElementById("myAlButton");
-  // input = input.toLowerCase();
-  let card = document.getElementsByClassName("card");
-  let name = document.getElementsByClassName("name");
-  let grid = document.querySelector(".gridlayout");
-  let header = (document.querySelector(".header").style.display = "block");
-
+  resetHidden(header);
   for (let i = 0; i < card.length; i++) {
-    if (!card[i].innerHTML.includes("")) {
-      card[i].style.display = "none";
-    } else {
-      card[i].style = "gridLayout";
-    }
+    resetHidden(card[i]);
   }
 }
