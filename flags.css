@@ -1,7 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Century Gothic";
   background: #021e43;
 }
+
+/*NAV BAR*/
 .navbar-custom {
   background-color: black;
   border-bottom: solid;
@@ -29,6 +35,8 @@ body {
   color: grey !important;
 }
 
+/*Secdary NAV*/
+
 .colorButtons {
   position: relative;
   z-index: 99;
@@ -43,26 +51,29 @@ body {
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0.5%;
-  background-color: black;
+  margin-bottom: 0%;
+  background-color: #004aad;
   box-sizing: border-box;
 }
 
+.searchBar,
+.btn {
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+}
+.searchBar {
+  height: 40px;
+  width: 500px;
+}
 .btn {
   font-size: 1em;
   font-weight: bold;
   height: 40px;
-}
-
-.searchBar {
-  height: 40px;
+  color: white;
 }
 
 #myRedButton {
-  color: white;
-  border-color: #d02023;
   background-color: #d02023;
-  border-radius: 0;
 }
 #myRedButton:hover {
   background-color: rgba(175, 32, 35);
@@ -70,20 +81,14 @@ body {
 }
 
 #myBlueButton {
-  color: white;
-  border-color: black;
   background-color: #004aad;
-  border-radius: 0;
 }
 #myBlueButton:hover {
   background-color: rgb(1, 57, 100);
   border-color: rgba(0, 74, 130);
 }
 #myYellowButton {
-  color: white;
-  border-color: rgb(231, 185, 1);
   background-color: rgb(231, 185, 1);
-  border-radius: 0;
 }
 #myYellowButton:hover {
   border-color: rgb(146, 118, 6);
@@ -91,42 +96,36 @@ body {
 }
 #myWhiteButton {
   color: black;
-  border-color: black;
   background-color: white;
-  border-radius: 0;
 }
 #myWhiteButton:hover {
   border-color: grey;
   background-color: grey;
-  color: white;
 }
 #myBlackButton {
-  color: white;
-  border-color: whitek;
   background-color: black;
-  border-radius: 0;
 }
 #myBlackButton:hover {
   border-color: rgb(88, 86, 86);
   background-color: rgb(88, 86, 86);
   color: white;
 }
-.headFooter {
-  text-align: center;
-  align-items: center;
-  width: 100vw;
+
+.navFooter {
   padding: 0.5%;
   margin-top: 0.5%;
+  align-items: center;
+  width: 100vw;
   color: white;
   background-color: #004aad;
 }
 
-.headFooter i {
+.navFooter i {
   text-align: center;
   margin: auto;
-  /* font-size: 10px; */
 }
 
+/*HEADER*/
 .header {
   height: 80vh;
   margin: auto;
@@ -151,21 +150,25 @@ body {
   word-wrap: break-word;
 }
 
+.gridlayout,
+.card {
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
 .gridlayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 6rem;
-  align-items: center;
   padding: 1rem;
   padding-right: 3rem;
   padding-left: 3rem;
   margin: 5%;
   margin-top: 10%;
   margin-bottom: 10%;
-  align-items: center;
 }
 .card {
-  text-align: center;
   max-width: 500px;
   height: 100%;
   border: none;
@@ -173,8 +176,7 @@ body {
 }
 
 .gridlayout .card img {
-  width: 100%;
-  /* padding: 3%; */
+  width: auto;
   max-width: 500px;
   max-height: 240px;
   -webkit-filter: drop-shadow(3px 3px 3px #222);
@@ -198,6 +200,9 @@ body {
 }
 
 .description {
+  width: 100%;
+  max-width: 370px;
+  min-width: 350px;
   padding: 1%;
   border: solid 5px #004aad;
   background-color: black;
@@ -213,10 +218,10 @@ body {
   font-size: 18px;
 }
 .name {
+  width: 80%;
   margin: auto;
   margin-bottom: 0;
   padding: 2.5%;
-  width: 80%;
   background-color: black;
   border-bottom: solid 2px #004aad;
   color: white;
@@ -229,6 +234,12 @@ body {
   font-size: 0px;
 }
 
+/*Hidden*/
+.hidden {
+  display: none;
+}
+
+/*FOOTER*/
 .footer {
   width: 100%;
   padding: 2%;
@@ -262,10 +273,8 @@ body {
 .contactIcons:hover {
   color: #ffde59;
 }
-.hidden {
-  display: none;
-}
 
+/*MEDIA Q's*/
 @media (max-width: 1020px) {
   .header,
   .gridlayout {
