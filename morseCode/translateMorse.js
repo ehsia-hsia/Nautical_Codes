@@ -145,6 +145,14 @@ function translate() {
   return (translatedText.innerHTML = transTextArray.join("    "));
 }
 
+document.addEventListener("keydown", function (e) {
+  ///creates object
+  console.log(e.key);
+  if (e.key === "Backspace") {
+    clear();
+  }
+});
+
 function clear() {
   ogText = document.getElementById("textArea");
   translatedText = document.getElementById("translatedArea");

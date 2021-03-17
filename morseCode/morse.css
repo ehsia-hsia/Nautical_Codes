@@ -35,13 +35,14 @@ body {
 
 .btn,
 .searchBar {
+  height: 40px;
 }
 .btn {
   font-size: 1em;
   font-weight: bold;
-  height: 40px;
   margin: auto;
 }
+
 #motranbtn {
   background-color: black;
 }
@@ -50,26 +51,10 @@ body {
   color: white;
 }
 .searchBar {
-  height: 40px;
   border: solid 3px #d02023;
   text-align: left;
   margin-left: 0.5%;
   background-color: white;
-}
-
-.buttonFooter {
-  text-align: center;
-  align-items: center;
-  width: 100vw;
-  padding: 0.5%;
-  margin-top: 0.5%;
-  color: white;
-  background-color: #004aad;
-}
-
-.buttonFooter i {
-  text-align: center;
-  margin: auto;
 }
 
 /*Header*/
@@ -92,30 +77,29 @@ body {
   margin-bottom: 0%;
 }
 
+.headText h1,
+.headText p {
+  margin-top: 3%;
+}
 .headText h1 {
   text-align: center;
   font-size: 4rem;
-  margin-top: 3%;
 }
 .headText p {
   text-align: left;
   font-size: 2.3vh;
   word-wrap: break-word;
-  margin-top: 3%;
 }
 .morse_button {
-  border: solid;
-  color: black;
-  border-width: 3px;
+  margin: auto;
+  margin-top: 5%;
   padding: 15px 32px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+  border: solid 3px white;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  margin: auto;
-  margin-top: 5%;
-  cursor: pointer;
-  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
-  border-color: white;
   color: white;
   background-color: rgba(208, 32, 35);
 }
@@ -135,17 +119,17 @@ body {
 }
 
 .card {
-  text-align: center;
   max-width: 500px;
   height: 100%;
   border: none;
   background-color: transparent;
+  text-align: center;
   justify-content: center;
 }
 
 .description {
-  padding: 1%;
   height: 100%;
+  padding: 1%;
   border: solid 5px #d02023;
 }
 
@@ -159,17 +143,15 @@ body {
 }
 
 .morseNotation {
-  font-size: 10rem !important;
-  padding: 0 !important;
-  margin-bottom: 30% !important;
-  line-height: 10px !important;
+  font-size: 10rem;
+  padding: 0;
+  margin-bottom: 30%;
+  line-height: 10px;
   font-weight: 900;
   width: 100%;
   color: white;
 }
-.oscar {
-  font-size: 8rem !important;
-}
+
 .tinier {
   font-size: 6rem !important;
 }
@@ -263,9 +245,7 @@ body {
   margin-top: 50px;
   margin-bottom: 10%;
   width: 90%;
-  border: solid;
-  border-width: 10px;
-  border-color: #004aad;
+  border: solid 3px #d02023;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
 }
 .translateRow,
@@ -278,8 +258,8 @@ body {
 .headingRow {
   text-align: center;
   padding: 1%;
-  border-bottom: solid 5px #ffde59;
-  background-color: #004aad;
+  border-bottom: solid 5px #d02023;
+  background-color: black;
 }
 
 .headingRow h1 {
@@ -305,49 +285,24 @@ body {
 #submit {
   font-size: 30px;
   text-align: center;
-  background-color: #004aad;
+  background-color: #d02023;
   color: white;
   border: solid 1px white;
 }
 #submit:hover {
-  background-color: #e3efff;
-  border: solid 3px #004aad;
-  color: black;
+  background-color: #8d0305;
+  border: none;
 }
 
 #clear {
   width: 100%;
   font-size: 20px;
-  background-color: #004aad;
+  padding: 0;
+  background-color: #d02023;
   color: white;
-  border: solid 3px #ffde59;
 }
 #clear:hover {
-  background-color: #e3efff;
-  border: solid 3px #004aad;
+  background-color: #ffde59;
+  border: solid 3px #ffde59;
   color: black;
-}
-
-.custom-group-morse {
-  /* position: fixed; */
-  width: 20%;
-  height: 70px;
-  padding: 0.3%;
-  /* margin: auto !important; */
-  /* margin-top: 10%; */
-  margin-bottom: 0;
-  background-color: white;
-  border: solid;
-  border-width: 5px;
-  border-color: #ffde59;
-}
-
-.custom-group-morse #mohomebtn {
-  background-color: #fcca01;
-  width: 70px;
-}
-
-#mohomebtn a {
-  text-decoration: none;
-  color: white;
 }
