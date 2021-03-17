@@ -1,0 +1,89 @@
+.footer {
+  width: 100%;
+  padding: 2%;
+  margin: auto;
+  background-color: black;
+  text-align: center;
+  border-top: solid;
+  border-color: #ffde59;
+}
+
+.signature {
+  color: white;
+  margin: auto;
+  font-size: 20px;
+}
+
+.signature:hover {
+  color: #ffde59;
+}
+
+.contact {
+  width: 10%;
+  color: white;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.contactIcons {
+  padding: 3%;
+}
+.contactIcons:hover {
+  color: #ffde59;
+}
+
+/*Nav Bar*/
+.navbar-custom {
+  background-color: black;
+  border-bottom: solid;
+  border-width: 5px;
+  border-color: #ffde59;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 40px;
+  font-family: "Century Gothic";
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 25px;
+  font-family: "Century Gothic";
+}
+
+.nav-link:hover {
+  color: grey !important;
+}
+
+.navbar-brand:hover {
+  color: grey !important;
+}
+
+.name {
+  margin: auto;
+  margin-bottom: 0;
+  padding: 2%;
+  width: 80%;
+  background-color: black;
+  color: white;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+.description {
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(3px 3px 3px #222);
+  word-wrap: break-all;
+  background-color: black;
+}
+
+.gridlayout {
+  grid-gap: 6rem;
+  padding: 1rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}

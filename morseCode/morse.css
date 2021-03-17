@@ -5,51 +5,20 @@
 
 
 */
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: "Century Gothic";
-  /* background-image: url(Images/head4.png); */
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: repeat;
-}
-/* Nav Bar */
-.navbar-custom {
-  width: 100vw;
-
-  background-color: white;
-  border-bottom: solid;
-  border-width: 5px;
-  border-color: #ffde59;
-}
-
-.navbar-brand {
-  color: black !important;
-  padding-left: 0.5%;
-  font-size: 40px;
-  font-family: "Century Gothic";
-}
-
-.nav-link {
-  color: black !important;
-  font-size: 25px;
-  font-family: "Century Gothic";
-}
-
-.nav-link:hover {
-  color: grey !important;
-}
-
-.navbar-brand:hover {
-  color: grey !important;
+  background: #021e43;
 }
 
 /*Button Bar*/
 .colorButtons {
   position: relative;
   z-index: 99;
-  width: 1 00vw;
+  width: 100vw;
 }
 .custom-group {
   position: fixed;
@@ -60,14 +29,13 @@ body {
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0.5%;
-  background-color: white;
-  box-sizing: border-box;
-  border-bottom: solid;
-  border-width: 5px;
-  border-color: #ffde59;
+  margin-bottom: 0%;
+  background-color: #d02023;
 }
 
+.btn,
+.searchBar {
+}
 .btn {
   font-size: 1em;
   font-weight: bold;
@@ -75,18 +43,18 @@ body {
   margin: auto;
 }
 #motranbtn {
-  background-color: #d02023;
+  background-color: black;
 }
 #motranbtn a {
   text-decoration: none;
   color: white;
 }
-
 .searchBar {
   height: 40px;
   border: solid 3px #d02023;
   text-align: left;
   margin-left: 0.5%;
+  background-color: white;
 }
 
 .buttonFooter {
@@ -106,15 +74,14 @@ body {
 
 /*Header*/
 .header {
+  height: 75vh;
   margin: auto;
-  margin-top: 10%;
-  width: 90%;
-  height: 40%;
-  display: block;
-  background-color: white;
-  border: solid;
-  border-width: 10px;
-  border-color: #d02023;
+  margin-top: 4%;
+  padding: 5%;
+  padding-top: 8%;
+  color: white;
+  background-color: black;
+  border: solid 10px rgba(208, 32, 35);
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
 }
 
@@ -154,9 +121,8 @@ body {
 }
 .morse_button:hover,
 #motranbtn:hover {
-  border-color: #d02023;
-  /* color: black; */
-  background-color: rgba(223, 0, 4, 0.845);
+  border-color: #df8183;
+  background-color: #df8183;
 }
 #motranbtn a:hover {
   color: black;
@@ -166,11 +132,6 @@ body {
 .gridlayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 3rem;
-  padding: 2rem;
-  margin: auto;
-  margin-top: 5%;
-  margin-bottom: 10%;
 }
 
 .card {
@@ -179,28 +140,17 @@ body {
   height: 100%;
   border: none;
   background-color: transparent;
+  justify-content: center;
 }
 
 .description {
   padding: 1%;
   height: 100%;
-  border: solid;
-  border-width: 5px;
-  border-color: #d02023;
-  background-color: white;
-  -webkit-filter: drop-shadow(3px 3px 3px #222);
-  filter: drop-shadow(3px 3px 3px #222);
-  word-wrap: break-all;
+  border: solid 5px #d02023;
 }
 
 .name {
-  margin: 0;
-  margin-bottom: 0;
-  padding: 2%;
-  background-color: #d02023;
-  color: white;
-  -webkit-filter: drop-shadow(2px 2px 2px #222);
-  filter: drop-shadow(2px 2px 2px #222);
+  border-bottom: solid 2px #d02023;
 }
 
 .description .letterName {
@@ -215,47 +165,13 @@ body {
   line-height: 10px !important;
   font-weight: 900;
   width: 100%;
+  color: white;
 }
 .oscar {
   font-size: 8rem !important;
 }
 .tinier {
   font-size: 6rem !important;
-}
-
-/*Footer*/
-.footer {
-  width: 100%;
-  padding: 2%;
-  margin: auto;
-  background-color: #004aad;
-  text-align: center;
-  border-top: solid;
-  border-color: #ffde59;
-}
-
-.signature {
-  color: white;
-  margin: auto;
-  font-size: 20px;
-}
-
-.signature:hover {
-  color: #ffde59;
-}
-
-.contact {
-  width: 10%;
-  color: white;
-  margin: auto;
-  margin-top: 1%;
-}
-
-.contactIcons {
-  padding: 3%;
-}
-.contactIcons:hover {
-  color: #ffde59;
 }
 
 /* Media Q's*/

@@ -7,34 +7,6 @@ body {
   background: #021e43;
 }
 
-/*NAV BAR*/
-.navbar-custom {
-  background-color: black;
-  border-bottom: solid;
-  border-width: 5px;
-  border-color: #ffde59;
-}
-
-.navbar-brand {
-  color: white !important;
-  font-size: 40px;
-  font-family: "Century Gothic";
-}
-
-.nav-link {
-  color: white !important;
-  font-size: 25px;
-  font-family: "Century Gothic";
-}
-
-.nav-link:hover {
-  color: grey !important;
-}
-
-.navbar-brand:hover {
-  color: grey !important;
-}
-
 /*Secdary NAV*/
 
 .colorButtons {
@@ -45,7 +17,7 @@ body {
 .custom-group {
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: 70px;
   padding: 1%;
   margin: auto !important;
   margin-top: 10%;
@@ -160,13 +132,6 @@ body {
 .gridlayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 6rem;
-  padding: 1rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  margin: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
 }
 .card {
   max-width: 500px;
@@ -205,11 +170,7 @@ body {
   min-width: 350px;
   padding: 1%;
   border: solid 5px #004aad;
-  background-color: black;
   color: white;
-  -webkit-filter: drop-shadow(3px 3px 3px #222);
-  filter: drop-shadow(3px 3px 3px #222);
-  word-wrap: break-all;
 }
 .description p {
   margin: auto;
@@ -218,15 +179,7 @@ body {
   font-size: 18px;
 }
 .name {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 0;
-  padding: 2.5%;
-  background-color: black;
   border-bottom: solid 2px #004aad;
-  color: white;
-  -webkit-filter: drop-shadow(2px 2px 2px #222);
-  filter: drop-shadow(2px 2px 2px #222);
 }
 
 .description .color {
@@ -237,41 +190,6 @@ body {
 /*Hidden*/
 .hidden {
   display: none;
-}
-
-/*FOOTER*/
-.footer {
-  width: 100%;
-  padding: 2%;
-  margin: auto;
-  background-color: black;
-  text-align: center;
-  border-top: solid;
-  border-color: #ffde59;
-}
-
-.signature {
-  color: white;
-  margin: auto;
-  font-size: 20px;
-}
-
-.signature:hover {
-  color: #ffde59;
-}
-
-.contact {
-  width: 10%;
-  color: white;
-  margin: auto;
-  margin-top: 1%;
-}
-
-.contactIcons {
-  padding: 3%;
-}
-.contactIcons:hover {
-  color: #ffde59;
 }
 
 /*MEDIA Q's*/

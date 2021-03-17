@@ -117,12 +117,13 @@ function resetHidden(card) {
 
 //SEARCH BAR
 function flagSearch() {
-  let input = document.getElementById("myInput").value;
+  let input = searchBar.value;
   input = input.toLowerCase();
+  hideHeader();
   for (let i = 0; i < card.length; i++) {
+    resetHidden(card[i]);
     if (!card[i].innerHTML.toLowerCase().includes(input)) {
       hideCard(card[i]);
-      hideHeader();
     } else if (input == "") {
       resetHidden(header);
       resetHidden(card[i]);

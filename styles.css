@@ -4,7 +4,7 @@ body {
 }
 
 /*Nav Bar*/
-.navbar-custom {
+/* .navbar-custom {
   background-color: black;
   border-bottom: solid;
   border-width: 5px;
@@ -29,7 +29,7 @@ body {
 
 .navbar-brand:hover {
   color: grey !important;
-}
+} */
 
 /*Header*/
 .header {
@@ -180,7 +180,7 @@ body {
 }
 
 /* Footer*/
-.footer {
+/* .footer {
   width: 100%;
   padding: 2%;
   margin: auto;
@@ -212,7 +212,7 @@ body {
 }
 .contactIcons:hover {
   color: #ffde59;
-}
+} */
 
 /*Media Q's */
 @media (max-width: 950px) {
