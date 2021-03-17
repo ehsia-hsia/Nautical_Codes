@@ -1,8 +1,8 @@
 /*translator*/
 let ogText = document.getElementById("textArea");
 let translatedText = document.getElementById("translatedArea");
+translatedText.readOnly = true;
 let transTextArray = [];
-
 let buttonSubmit = document.getElementById("submit");
 buttonSubmit.addEventListener("click", translate);
 

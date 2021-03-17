@@ -306,3 +306,14 @@ body {
   border: solid 3px #ffde59;
   color: black;
 }
+
+@media (max-width: 990px) {
+  #textArea {
+    height: 200px;
+    width: 100%;
+  }
+
+  #translatedArea {
+    height: 200px;
+  }
+}
