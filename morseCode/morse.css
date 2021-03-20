@@ -11,7 +11,7 @@
 body {
   margin: 0;
   font-family: "Century Gothic";
-  background: #021e43;
+  background: black;
 }
 
 /*Button Bar*/
@@ -131,10 +131,13 @@ body {
   height: 100%;
   padding: 1%;
   border: solid 5px #d02023;
+  background-color: white;
 }
 
 .name {
   border-bottom: solid 2px #d02023;
+  background-color: white;
+  color: black;
 }
 
 .description .letterName {
@@ -149,7 +152,7 @@ body {
   line-height: 10px;
   font-weight: 900;
   width: 100%;
-  color: white;
+  color: black;
 }
 
 .tinier {

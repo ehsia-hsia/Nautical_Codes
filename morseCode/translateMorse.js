@@ -149,6 +149,9 @@ document.addEventListener("keydown", function (e) {
   ///creates object
   console.log(e.key);
   if (e.key === "Backspace") {
+    ogText = document.getElementById("textArea");
+  }
+  if (ogText.value === "") {
     clear();
   }
 });
