@@ -135,9 +135,9 @@ body {
 }
 
 .name {
-  border-bottom: solid 2px #d02023;
-  background-color: white;
-  color: black;
+  border-bottom: solid 4px #d02023;
+  background-color: black;
+  color: white;
 }
 
 .description .letterName {
