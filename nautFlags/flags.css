@@ -12,12 +12,12 @@ body {
 .colorButtons {
   position: relative;
   z-index: 99;
-  width: 100vw;
+  width: 100%;
 }
 .custom-group {
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 100px;
   padding: 1%;
   margin: auto !important;
   margin-top: 10%;
@@ -30,17 +30,19 @@ body {
 
 .searchBar,
 .btn {
-  border-top: solid 2px white;
-  border-bottom: solid 2px white;
+  min-height: 80px;
+  min-width: 100px;
+  border: solid 2px white;
 }
 .searchBar {
   height: 40px;
-  width: 500px;
+  width: 350px;
 }
 .btn {
-  font-size: 1em;
+  font-size: 15px;
   font-weight: bold;
-  height: 40px;
+  height: 100%;
+  width: 90px;
   color: white;
 }
 
@@ -116,9 +118,11 @@ body {
 
 .headText h1 {
   font-size: 4rem;
+  text-align: left;
 }
 .headText p {
   font-size: 1.5rem;
+  text-align: left;
   word-wrap: break-word;
 }
 
@@ -134,25 +138,28 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 .card {
-  max-width: 500px;
+  /* max-width: 300px;
+  min-width: 300px; */
   height: 100%;
+  width: 100%;
   border: none;
   background-color: transparent;
 }
 
 .gridlayout .card img {
-  width: auto;
-  max-width: 500px;
-  max-height: 240px;
+  width: 90%;
+  /* max-width: 400px;*/
+  /*max-height: 400px;*/
   -webkit-filter: drop-shadow(3px 3px 3px #222);
   filter: drop-shadow(3px 3px 3px #222);
   position: relative;
   z-index: 1;
   margin-top: 4%;
 }
-
+#oscar img,
 #papa img,
 #quebec img,
+#romeo img,
 #sierra img,
 #tango img,
 #uniform img,
@@ -161,13 +168,16 @@ body {
 #xray img,
 #yankee img,
 #zulu img {
-  max-width: 240px;
+  max-width: 70%;
+  min-width: 70%;
+  max-height: 70%;
+  min-height: 70%;
 }
 
 .description {
   width: 100%;
-  max-width: 370px;
-  min-width: 350px;
+  /* min-width: 420px;
+  max-width: 420px; */
   padding: 1%;
   border: solid 5px #004aad;
   color: white;
@@ -176,7 +186,7 @@ body {
   margin: auto;
   padding: 5%;
   text-align: center;
-  font-size: 18px;
+  font-size: 19px;
 }
 .name {
   border-bottom: solid 2px #004aad;
@@ -228,6 +238,7 @@ body {
   .card {
     width: 100%;
   }
+
   .headText {
     width: 90%;
     text-align: center;
@@ -236,16 +247,15 @@ body {
 @media (max-width: 600px) {
   .header,
   .gridlayout {
-    margin-top: 30%;
+    margin-top: 40%;
   }
 
-  .header .headtext {
+  .header .headtext h1,
+  .header .headText p {
     text-align: center;
-    font-size: 1rem;
-    color: yellow;
   }
 
-  .headFooter {
-    font-size: 0.8rem;
+  .card .description {
+    width: 70%;
   }
 }
