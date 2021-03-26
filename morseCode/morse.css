@@ -59,9 +59,9 @@ body {
 
 /*Header*/
 .header {
-  height: 75vh;
+  height: 80vh;
   margin: auto;
-  margin-top: 4%;
+  margin-top: 0;
   padding: 5%;
   padding-top: 8%;
   color: white;
@@ -79,16 +79,20 @@ body {
 
 .headText h1,
 .headText p {
+  text-align: left;
   margin-top: 3%;
 }
 .headText h1 {
-  text-align: center;
   font-size: 4rem;
 }
 .headText p {
-  text-align: left;
   font-size: 2.3vh;
+  padding-right: 3%;
   word-wrap: break-word;
+}
+
+.btnRow {
+  text-align: center;
 }
 .morse_button {
   margin: auto;
@@ -105,8 +109,7 @@ body {
 }
 .morse_button:hover,
 #motranbtn:hover {
-  border-color: #df8183;
-  background-color: #df8183;
+  border-color: rgba(208, 32, 35);
 }
 #motranbtn a:hover {
   color: black;
@@ -174,11 +177,12 @@ body {
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 990px) {
   .header,
   .gridlayout {
-    margin-top: 20%;
+    /* margin-top: 20%; */
     justify-items: center;
+    height: 100%;
   }
   .header {
     width: 90%;
@@ -187,8 +191,11 @@ body {
     width: 100%;
   }
   .header p,
-  h1 {
+  .header h1 {
     text-align: center;
+  }
+  .btnRow {
+    margin-top: 25%;
   }
   .header button {
     display: block;
@@ -224,10 +231,9 @@ body {
   .name {
     font-size: 3rem;
   }
-  .header p,
-  h1 {
+  .header h1 {
     text-align: center;
-    font-size: 1rem;
+    font-size: 4rem;
   }
   .header p {
     padding-top: 0%;

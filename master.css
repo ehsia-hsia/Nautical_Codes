@@ -19,7 +19,7 @@
 }
 
 .contact {
-  width: 10%;
+  width: 15%;
   color: white;
   margin: auto;
   margin-top: 1%;
@@ -60,6 +60,10 @@
   color: grey !important;
 }
 
+.navbar-toggler,
+.navbar-toggler-icon {
+  background-color: white;
+}
 .name {
   margin: auto;
   margin-bottom: 0;

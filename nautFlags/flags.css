@@ -99,7 +99,7 @@ body {
 
 /*HEADER*/
 .header {
-  height: 80vh;
+  height: 600px;
   margin: auto;
   padding: 5%;
   padding-top: 8%;
@@ -198,7 +198,7 @@ body {
   .gridlayout {
     margin-top: 15%;
   }
-  .header p {
+  .headText {
     text-align: center;
   }
 }
@@ -215,8 +215,7 @@ body {
   .header {
     width: 90%;
   }
-  .header p,
-  h1 {
+  .headText {
     text-align: center;
   }
 }
@@ -229,11 +228,8 @@ body {
   .card {
     width: 100%;
   }
-  .header {
+  .headText {
     width: 90%;
-  }
-  .header p,
-  h1 {
     text-align: center;
   }
 }
@@ -243,14 +239,12 @@ body {
     margin-top: 30%;
   }
 
-  .header p,
-  h1 {
+  .header .headtext {
     text-align: center;
     font-size: 1rem;
+    color: yellow;
   }
-  .header p {
-    padding-bottom: 5%;
-  }
+
   .headFooter {
     font-size: 0.8rem;
   }
