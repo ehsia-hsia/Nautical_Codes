@@ -70,6 +70,7 @@ body {
   color: white;
   background-color: black;
   border: solid 10px rgba(208, 32, 35);
+  border-radius: 15px;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
 }
 
@@ -98,17 +99,19 @@ body {
 
 .btnRow {
   text-align: center;
-  /* margin-top: 15% !important; */
+  align-items: center;
+  /* margin-top: 5% !important; */
 }
 .morse_button {
   margin: auto;
-  /* margin-top: 5%; */
+  height: 100%;
+  width: 100%;
   padding: 15px 32px;
   cursor: pointer;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
   border: solid 3px white;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   background-color: rgba(208, 32, 35);
@@ -137,12 +140,13 @@ body {
   height: 100%;
   padding: 1%;
   border: solid 5px #d02023;
-  background-color: white;
+  border-radius: 15px;
+  background-color: black;
 }
 
 .name {
   border-bottom: solid 4px #d02023;
-  background-color: black;
+  /* background-color: black; */
   color: white;
 }
 
@@ -158,7 +162,7 @@ body {
   line-height: 10px;
   font-weight: 900;
   width: 100%;
-  color: black;
+  color: white;
 }
 
 .tinier {
@@ -205,12 +209,18 @@ body {
   .gridlayout {
     margin-top: 15%;
   }
+
   .header p {
     text-align: center;
+  }
+
+  .btnRow {
+    height: 100%;
   }
   .header button {
     display: block;
     margin: auto;
+    margin-top: 15%;
   }
 }
 
@@ -229,13 +239,6 @@ body {
   .header p,
   .header h1 {
     text-align: center;
-  }
-  .btnRow {
-    margin-top: 25%;
-  }
-  .header button {
-    display: block;
-    margin: auto;
   }
 }
 @media (max-width: 700px) {
@@ -276,10 +279,7 @@ body {
     padding-bottom: 3%;
     font-size: 1rem;
   }
-  .header button {
-    display: block;
-    margin: auto;
-  }
+
   .headFooter {
     font-size: 0.8rem;
   }
