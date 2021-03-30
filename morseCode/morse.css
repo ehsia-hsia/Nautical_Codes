@@ -5,13 +5,19 @@
 
 
 */
-* {
-  box-sizing: border-box;
+
+html {
+  height: 100% !important;
 }
 body {
-  margin: 0;
   font-family: "Century Gothic";
   background: black;
+  min-height: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
 }
 
 /*Button Bar*/
@@ -116,8 +122,7 @@ body {
 .gridlayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  position: relative;
-  height: 100%;
+  background-color: pink;
 }
 
 .card {
@@ -160,11 +165,41 @@ body {
 .tinier {
   font-size: 6rem !important;
 }
-
 .footer {
-  position: absolute;
-  bottom: 0;
+  width: 100%;
+  padding: 2%;
+  display: block;
+  margin: auto;
+  background-color: black;
+  text-align: center;
+  border-top: solid;
+  border-color: #ffde59;
 }
+
+.signature {
+  color: white;
+  margin: auto;
+  font-size: 20px;
+}
+
+.signature:hover {
+  color: #ffde59;
+}
+
+.contact {
+  width: 15%;
+  color: white;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.contactIcons {
+  padding: 4%;
+}
+.contactIcons:hover {
+  color: #ffde59;
+}
+
 /* Media Q's*/
 @media (max-width: 1020px) {
   .header,
