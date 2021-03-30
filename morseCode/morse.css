@@ -122,7 +122,6 @@ body {
 .gridlayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  background-color: pink;
 }
 
 .card {
@@ -220,7 +219,6 @@ body {
   .gridlayout {
     /* margin-top: 20%; */
     justify-items: center;
-    height: 100%;
   }
   .header {
     width: 90%;
