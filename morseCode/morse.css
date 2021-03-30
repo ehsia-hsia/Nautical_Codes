@@ -18,19 +18,13 @@ body {
 .colorButtons {
   position: relative;
   z-index: 99;
-  width: 100vw;
 }
 .custom-group {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 60px;
   padding: 0.5%;
-  margin: auto !important;
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0%;
-  background-color: #d02023;
+  margin: auto;
 }
 
 .btn,
@@ -45,6 +39,10 @@ body {
 
 #motranbtn {
   background-color: black;
+  width: 50%;
+}
+#motranbtn:hover {
+  background-color: #d02023;
 }
 #motranbtn a {
   text-decoration: none;
@@ -59,11 +57,10 @@ body {
 
 /*Header*/
 .header {
-  height: 80vh;
+  height: 80% !important;
   margin: auto;
-  margin-top: 0;
+  margin-top: 0px !important;
   padding: 5%;
-  padding-top: 8%;
   color: white;
   background-color: black;
   border: solid 10px rgba(208, 32, 35);
@@ -75,6 +72,7 @@ body {
   padding-bottom: 0;
   word-wrap: break-word;
   margin-bottom: 0%;
+  align-items: center;
 }
 
 .headText h1,
@@ -84,6 +82,7 @@ body {
 }
 .headText h1 {
   font-size: 4rem;
+  margin-top: 0px;
 }
 .headText p {
   font-size: 2.3vh;
@@ -93,10 +92,11 @@ body {
 
 .btnRow {
   text-align: center;
+  /* margin-top: 15% !important; */
 }
 .morse_button {
   margin: auto;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   padding: 15px 32px;
   cursor: pointer;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
@@ -111,14 +111,13 @@ body {
 #motranbtn:hover {
   border-color: rgba(208, 32, 35);
 }
-#motranbtn a:hover {
-  color: black;
-}
 
 /*Morse Grid*/
 .gridlayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  position: relative;
+  height: 100%;
 }
 
 .card {
@@ -162,6 +161,10 @@ body {
   font-size: 6rem !important;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+}
 /* Media Q's*/
 @media (max-width: 1020px) {
   .header,
@@ -233,11 +236,12 @@ body {
   }
   .header h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 1.5rem;
   }
   .header p {
     padding-top: 0%;
     padding-bottom: 3%;
+    font-size: 1rem;
   }
   .header button {
     display: block;

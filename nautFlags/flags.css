@@ -4,7 +4,7 @@
 
 body {
   font-family: "Century Gothic";
-  background: #021e43;
+  background: black;
 }
 
 /*Secdary NAV*/
@@ -50,6 +50,9 @@ body {
 .searchBar {
   height: 40px;
   width: 350px;
+  border-left: solid 2px white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .btn {
   font-size: 15px;
@@ -57,6 +60,7 @@ body {
   height: 100%;
   width: 90px;
   color: white;
+  border-radius: 15px;
 }
 
 #myRedButton {
@@ -114,12 +118,13 @@ body {
 
 /*HEADER*/
 .header {
-  height: 600px;
+  height: 400px;
   margin-top: 0px;
   padding: 5%;
   color: white;
   background-color: black;
   border: solid 10px #004aad;
+  border-radius: 15px;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
 }
 
@@ -135,6 +140,7 @@ body {
 .headText p {
   font-size: 1.5rem;
   text-align: left;
+  width: 80%;
   word-wrap: break-word;
 }
 
@@ -190,6 +196,7 @@ body {
   max-width: 420px; */
   padding: 1%;
   border: solid 5px #004aad;
+  border-radius: 15px;
   color: white;
 }
 .description p {
@@ -200,6 +207,8 @@ body {
 }
 .name {
   border-bottom: solid 2px #004aad;
+  -webkit-filter: none;
+  filter: none;
 }
 
 .description .color {

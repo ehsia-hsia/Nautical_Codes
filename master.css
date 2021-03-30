@@ -26,7 +26,7 @@
 }
 
 .contactIcons {
-  padding: 3%;
+  padding: 4%;
 }
 .contactIcons:hover {
   color: #ffde59;
@@ -71,8 +71,6 @@
   width: 80%;
   background-color: black;
   color: white;
-  -webkit-filter: drop-shadow(2px 2px 2px #222);
-  filter: drop-shadow(2px 2px 2px #222);
 }
 
 .description {
