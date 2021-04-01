@@ -89,7 +89,8 @@ body {
 .morse-flex-grid,
 .flag-flex-grid {
   display: flex;
-  flex: 300px;
+  flex-wrap: wrap;
+  flex: 40%;
   padding-bottom: 10px;
   border-bottom: solid;
   width: 90%;
@@ -117,7 +118,7 @@ body {
 .semimage,
 .morseimage,
 .flagimage {
-  min-width: 300px;
+  width: 100%;
   height: 100%;
   border: solid;
   border-width: 10px;
@@ -228,7 +229,8 @@ body {
   .sem-flex-grid .col,
   .morse-flex-grid,
   .flag-flex-grid {
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 100%;
   }
   .sectiontitle,
   .description {
