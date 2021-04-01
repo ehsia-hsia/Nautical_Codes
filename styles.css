@@ -37,7 +37,7 @@ body {
 
 /*Header*/
 .header {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 5%;
   margin: auto;
@@ -62,26 +62,28 @@ body {
 
 .buttons {
   width: 100%;
-  height: 50%;
+  /* height: 60%; */
   margin: auto;
   margin-top: 10%;
 }
 
 .header-buttons {
   width: 100%;
-  height: 80%;
+  height: 50%;
   padding-bottom: 0;
   margin: auto;
 }
-
+a button {
+  font-size: 1vh;
+}
 .big-heading {
-  font-size: 100px;
+  font-size: 10vh;
   padding-right: 1%;
 }
 
 .aboutpara {
   width: 50%;
-  font-size: 20px;
+  font-size: 10vh;
   word-wrap: break-word;
 }
 
