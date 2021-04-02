@@ -42,7 +42,7 @@
 .searchBar,
 .btn,
 .submit {
-  height: 70px;
+  height: 8vh;
   border: solid 2px white;
 }
 .searchBar {
