@@ -2,78 +2,29 @@
   box-sizing: border-box;
 }
 
-/*Secdary NAV*/
-
-.colorButtons {
-  position: relative;
-  z-index: 99;
-  width: 100%;
-}
-.custom-group {
-  /* position: fixed; */
-  width: 100%;
-  height: 100px;
-  padding: 1%;
-  margin: auto !important;
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-  /* background-color: #004aad; */
-  box-sizing: border-box;
-}
-
-.topbtn {
-  position: fixed;
-  bottom: 5%;
-  left: 10px;
-  width: 80px;
-  color: black;
-  background-color: black;
-  border: solid 1px white;
-}
-.topbtn a {
-  color: white;
-  text-decoration: none;
-}
-.searchBar,
-.btn {
-  min-height: 80px;
-  min-width: 100px;
-  border: solid 2px white;
-}
-.searchBar {
-  height: 40px;
-  width: 80%;
-}
-.btn {
-  font-size: 2rem;
-  font-weight: bold;
-  height: 100%;
-  width: 98vw;
-  color: white;
-}
-#searchName {
-  display: inline;
-}
+/*DropDown*/
 .dropGroup {
+  /*Parent BTN Group*/
   position: fixed;
+  margin: auto;
   width: 100%;
   z-index: 99;
-  margin: auto;
-  background-color: pink;
-}
-.dropGroup .dropmenu .dropDrop {
-  background-color: black;
 }
 .dropGroup .dropmenu {
   width: 100%;
   height: 5%;
   margin: auto;
-  background-color: pink;
+}
+.dropGroup .dropmenu .dropDrop {
+  /*Dropmenu Button*/
+
+  background-color: black;
+  border-bottom: solid 3px #ffde59;
+  border-radius: 0;
 }
 
 .droppedItems {
+  /*Shown Menu*/
   width: 100%;
   height: 50%;
   margin-left: 15%;
@@ -84,6 +35,28 @@
 .droppedItems button {
   width: 80%;
   border: solid 3px white;
+}
+.searchBar,
+.btn {
+  min-height: 80px;
+  min-width: 100px;
+  border: solid 2px white;
+}
+.searchBar {
+  height: 40px;
+  width: 80%;
+  background-color: black;
+  color: white;
+}
+.btn {
+  font-size: 2rem;
+  font-weight: bold;
+  height: 100%;
+  width: 98vw;
+  color: white;
+}
+#searchName {
+  display: inline;
 }
 
 #myRedButton {
@@ -125,48 +98,52 @@
   color: white;
 }
 
-.navFooter {
-  padding: 0.5%;
-  margin-top: 0.5%;
-  align-items: center;
-  width: 100vw;
-  color: white;
-  background-color: #004aad;
-}
-
-.navFooter i {
-  text-align: center;
-  margin: auto;
-}
-
 /*HEADER*/
+
 .header {
-  height: 400px;
-  margin-top: 100px;
+  height: 50%;
+  width: 95vw;
   padding: 5%;
-  color: white;
+  margin: auto;
+  margin-top: 100px;
   background-color: black;
   border: solid 10px #004aad;
-  border-radius: 15px;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
 }
 
-.headText h1,
-.headText p {
-  margin-top: 3%;
+.titleHead,
+.buttons,
+.aboutpara {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  color: white;
 }
 
-.headText h1 {
-  font-size: 4rem;
-  text-align: left;
+.titleHead,
+.aboutpara {
+  margin-bottom: 5%;
 }
-.headText p {
-  font-size: 1.5rem;
-  text-align: left;
-  width: 80%;
+
+.header-buttons {
+  width: 100%;
+  height: 50%;
+  padding-bottom: 0;
+  margin: auto;
+}
+
+.big-heading {
+  font-size: 10vh;
+  padding-right: 1%;
+}
+
+.aboutpara {
+  width: 70%;
+  font-size: 10vh;
   word-wrap: break-word;
 }
 
+/*Grid Layout*/
 .gridlayout,
 .card {
   text-align: center;
@@ -177,10 +154,9 @@
 .gridlayout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-content: center;
 }
 .card {
-  /* max-width: 300px;
-  min-width: 300px; */
   height: 90%;
   width: 90%;
   border: none;
@@ -215,8 +191,7 @@
 
 .description {
   width: 100%;
-  /* min-width: 420px;
-  max-width: 420px; */
+
   padding: 1%;
   border: solid 5px #004aad;
   border-radius: 15px;
@@ -246,7 +221,6 @@
 
 /*MEDIA Q's*/
 @media (max-width: 1020px) {
-  .header,
   .gridlayout {
     margin-top: 5%;
   }
@@ -256,48 +230,31 @@
 }
 
 @media (max-width: 930px) {
-  .header,
   .gridlayout {
     margin-top: 20%;
-    justify-items: center;
   }
   .card {
     width: 100%;
-  }
-  .header {
-    width: 90%;
-    margin: auto;
-  }
-  .headText {
-    text-align: center;
-    margin: auto;
   }
 }
 @media (max-width: 700px) {
-  .header,
   .gridlayout {
     margin-top: 25%;
-    justify-items: center;
   }
   .card {
     width: 100%;
   }
-
-  .headText {
-    width: 90%;
-    text-align: center;
-    margin: auto;
+  .big-heading {
+    font-size: 3em;
+  }
+  .aboutpara {
+    width: 100%;
+    font-size: 3em;
   }
 }
 @media (max-width: 600px) {
-  .header,
   .gridlayout {
     margin-top: 40%;
-  }
-
-  .header .headtext h1,
-  .header .headText p {
-    text-align: center;
   }
   .description {
     font-size: 25px;

@@ -203,4 +203,5 @@ function All() {
 function dropNameChange(color, backC) {
   dropName.textContent = color;
   dropBack.style.backgroundColor = backC;
+  dropBack.style.borderBottom = 0;
 }

@@ -41,7 +41,7 @@ body {
   width: 98vw;
   padding: 5%;
   margin: auto;
-  background-color: white;
+  background-color: black;
   border: solid 10px #004aad;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
 }
@@ -62,7 +62,6 @@ body {
 
 .buttons {
   width: 100%;
-  /* height: 60%; */
   margin: auto;
   margin-top: 10%;
 }
@@ -79,14 +78,12 @@ a button {
 .big-heading {
   font-size: 10vh;
   padding-right: 1%;
-  color: black;
 }
 
 .aboutpara {
   width: 50%;
   font-size: 10vh;
   word-wrap: break-word;
-  color: black;
 }
 
 /*Grid Sections*/
@@ -101,8 +98,8 @@ a button {
   width: 90%;
   padding: 3%;
   margin: 3% auto;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   box-shadow: 3px 3px 10px 3px rgb(0, 0, 0);
   border: solid 10px;
 }
@@ -194,34 +191,6 @@ a button {
   padding-right: 3%;
   box-shadow: none;
 }
-
-/* Footer*/
-/* .footer {
-  width: 100%;
-  padding: 2%;
-  margin: auto;
-  background-color: black;
-  text-align: center;
-  border-top: solid;
-  border-color: #ffde59;
-}
-
-.signature {
-  color: white;
-  margin: auto;
-  font-size: 20px;
-}
-
-.signature:hover {
-  color: #ffde59;
-}
-
-
-
-
-.contactIcons:hover {
-  color: #ffde59;
-} */
 
 /* Media Q's */
 @media (max-width: 950px) {

@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica, sans-serif;
-  background: black;
+  background: rgb(16, 5, 55);
 }
 
 .footer {
@@ -39,6 +39,7 @@ body {
 
 /*Nav Bar*/
 .navbar-custom {
+  width: 100%;
   background-color: black;
   border-bottom: solid;
   border-width: 5px;
