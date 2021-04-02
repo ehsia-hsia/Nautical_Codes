@@ -166,17 +166,18 @@
       class="btn-group dropGroup"
       role="group"
       aria-label="Button group with nested dropdown"
+      id="topLevelDrop"
     >
-      <div class="btn-group dropButtons" role="group">
+      <div class="btn-group dropmenu" role="group">
         <button
-          id="btnGroupDrop1 dropDrop"
+          id="btnGroupDrop1 "
           type="button"
-          class="btn btn-secondary dropdown-toggle"
+          class="btn btn-secondary dropdown-toggle dropDrop"
           data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Flag Search
+          <p id="searchName">Flag Search</p>
         </button>
         <div class="dropdown-menu droppedItems" aria-labelledby="btnGroupDrop1">
           <input
@@ -244,7 +245,6 @@
     </div>
 
     <!-- FLAG GRIDS-->
-    <button class="topbtn"><a href="#top">Top</a></button>
     <section class="gridlayout" id="myelement">
       <div class="card" id="alpha">
         <figure>

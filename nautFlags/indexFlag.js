@@ -30,7 +30,9 @@ let zulu = document.getElementById("zulu");
 let card = document.getElementsByClassName("card");
 let name = document.getElementsByClassName("name");
 let header = document.querySelector(".header");
-
+let dropName = document.getElementById("searchName");
+let dropBack = document.getElementById("topLevelDrop").firstElementChild
+  .firstElementChild;
 //EVENT LISTENERS
 let redButton = document.querySelector("#myRedButton");
 redButton.addEventListener("click", Red);
@@ -140,6 +142,8 @@ function Red() {
       hideCard(card[i]);
     }
   }
+
+  dropNameChange("Red Flags", "red");
 }
 
 function Blue() {
@@ -150,6 +154,7 @@ function Blue() {
       hideCard(card[i]);
     }
   }
+  dropNameChange("Blue Flags", "blue");
 }
 
 function Yellow() {
@@ -160,6 +165,7 @@ function Yellow() {
       hideCard(card[i]);
     }
   }
+  dropNameChange("Yellow Flags", "rgb(201, 163, 10)");
 }
 
 function White() {
@@ -170,6 +176,7 @@ function White() {
       hideCard(card[i]);
     }
   }
+  dropNameChange("White Flags", "grey");
 }
 
 function Black() {
@@ -182,6 +189,7 @@ function Black() {
       hideCard(card[i]);
     }
   }
+  dropNameChange("Black Flags", "black");
 }
 
 function All() {
@@ -189,4 +197,10 @@ function All() {
   for (let i = 0; i < card.length; i++) {
     resetHidden(card[i]);
   }
+  dropNameChange("Flag Search", "black");
+}
+
+function dropNameChange(color, backC) {
+  dropName.textContent = color;
+  dropBack.style.backgroundColor = backC;
 }
