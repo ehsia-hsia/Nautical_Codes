@@ -143,7 +143,7 @@ function Red() {
     }
   }
 
-  dropNameChange("Red Flags", "red");
+  dropNameChange("Red Flags", "#d02023");
 }
 
 function Blue() {
@@ -154,7 +154,7 @@ function Blue() {
       hideCard(card[i]);
     }
   }
-  dropNameChange("Blue Flags", "blue");
+  dropNameChange("Blue Flags", "#004aad");
 }
 
 function Yellow() {
@@ -165,7 +165,7 @@ function Yellow() {
       hideCard(card[i]);
     }
   }
-  dropNameChange("Yellow Flags", "rgb(201, 163, 10)");
+  dropNameChange("Yellow Flags", "rgb(231, 185, 1");
 }
 
 function White() {
@@ -176,7 +176,7 @@ function White() {
       hideCard(card[i]);
     }
   }
-  dropNameChange("White Flags", "grey");
+  dropNameChange("White Flags", "black");
 }
 
 function Black() {
@@ -197,11 +197,16 @@ function All() {
   for (let i = 0; i < card.length; i++) {
     resetHidden(card[i]);
   }
-  dropNameChange("Flag Search", "black");
+  AllFlagButton("Flag Search", "black");
 }
 
 function dropNameChange(color, backC) {
   dropName.textContent = color;
   dropBack.style.backgroundColor = backC;
   dropBack.style.borderBottom = 0;
+}
+function AllFlagButton(color, backC) {
+  dropName.textContent = color;
+  dropBack.style.backgroundColor = backC;
+  dropBack.style.borderBottom = "solid 3px #ffde59";
 }

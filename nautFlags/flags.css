@@ -8,25 +8,28 @@
   position: fixed;
   margin: auto;
   width: 100%;
+  max-height: 100px;
   z-index: 99;
 }
 .dropGroup .dropmenu {
   width: 100%;
-  height: 5%;
   margin: auto;
+  max-height: 100px;
 }
 .dropGroup .dropmenu .dropDrop {
   /*Dropmenu Button*/
-
   background-color: black;
+  max-height: 100px;
   border-bottom: solid 3px #ffde59;
   border-radius: 0;
+  border-right: 0;
+  border-left: 0;
 }
 
 .droppedItems {
   /*Shown Menu*/
   width: 100%;
-  height: 50%;
+  max-height: 100px;
   margin-left: 15%;
   background-color: black;
   text-align: center;
@@ -34,25 +37,25 @@
 
 .droppedItems button {
   width: 80%;
-  border: solid 3px white;
+  border: solid 1px black;
 }
 .searchBar,
 .btn {
-  min-height: 80px;
-  min-width: 100px;
+  height: 70px;
+
   border: solid 2px white;
 }
 .searchBar {
-  height: 40px;
   width: 80%;
   background-color: black;
+  color: white;
+}
+.searchBar::placeholder {
   color: white;
 }
 .btn {
   font-size: 2rem;
   font-weight: bold;
-  height: 100%;
-  width: 98vw;
   color: white;
 }
 #searchName {
