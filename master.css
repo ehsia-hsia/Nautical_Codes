@@ -1,6 +1,10 @@
+html {
+  width: 100vw;
+}
 body {
   font-family: Helvetica, sans-serif;
   background: rgb(16, 5, 55);
+  width: 100vw;
 }
 
 .footer {
@@ -39,7 +43,7 @@ body {
 
 /*Nav Bar*/
 .navbar-custom {
-  width: 100%;
+  width: 100vw !important;
   background-color: black;
   border-bottom: solid;
   border-width: 5px;
@@ -48,7 +52,7 @@ body {
 
 .navbar-brand {
   color: white !important;
-  font-size: 40px;
+  font-size: 2em;
 }
 
 .nav-link {

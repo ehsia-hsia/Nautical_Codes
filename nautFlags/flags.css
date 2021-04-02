@@ -20,7 +20,7 @@
   /*Dropmenu Button*/
   background-color: black;
   max-height: 100px;
-  border-bottom: solid 3px #ffde59;
+  border-bottom: solid 4px #004aad;
   border-radius: 0;
   border-right: 0;
   border-left: 0;
@@ -30,7 +30,7 @@
   /*Shown Menu*/
   width: 100%;
   max-height: 100px;
-  margin-left: 15%;
+  /* margin-left: 15%; */
   background-color: black;
   text-align: center;
 }
@@ -40,20 +40,23 @@
   border: solid 1px black;
 }
 .searchBar,
-.btn {
+.btn,
+.submit {
   height: 70px;
-
   border: solid 2px white;
 }
 .searchBar {
   width: 80%;
   background-color: black;
   color: white;
+  font-size: 1.3rem;
 }
 .searchBar::placeholder {
   color: white;
+  font-size: 1.3rem;
 }
-.btn {
+.btn,
+.submit {
   font-size: 2rem;
   font-weight: bold;
   color: white;
@@ -62,6 +65,9 @@
   display: inline;
 }
 
+.submit {
+  background-color: rgb(16, 5, 55);
+}
 #myRedButton {
   background-color: #d02023;
 }
@@ -252,7 +258,7 @@
   }
   .aboutpara {
     width: 100%;
-    font-size: 3em;
+    font-size: 1.5em;
   }
 }
 @media (max-width: 600px) {
@@ -261,5 +267,13 @@
   }
   .description {
     font-size: 25px;
+  }
+
+  .searchBar::placeholder {
+    font-size: 0.8em;
+  }
+  .header .aboutpara h4 {
+    padding: 5%;
+    font-size: 0.8em;
   }
 }

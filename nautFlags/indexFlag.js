@@ -33,6 +33,7 @@ let header = document.querySelector(".header");
 let dropName = document.getElementById("searchName");
 let dropBack = document.getElementById("topLevelDrop").firstElementChild
   .firstElementChild;
+let dropMenu = document.getElementById("droppedItems");
 //EVENT LISTENERS
 let redButton = document.querySelector("#myRedButton");
 redButton.addEventListener("click", Red);
@@ -49,8 +50,17 @@ whiteButton.addEventListener("click", White);
 let blackButton = document.querySelector("#myBlackButton");
 blackButton.addEventListener("click", Black);
 
+let allButton = document.querySelector("#myAllButton");
+allButton.addEventListener("click", All);
+
 let searchBar = document.querySelector("#myInput");
-searchBar.addEventListener("keyup", flagSearch);
+searchBar.addEventListener("focus", flagSearch);
+searchBar.addEventListener("keyup", submitInput);
+
+searchBar.autocomplete = "off";
+
+let searchSubmit = document.querySelector(".submit");
+searchSubmit.addEventListener("click", flagSearch);
 
 //COLOR ARRAYS
 let red = [
@@ -118,6 +128,11 @@ function resetHidden(card) {
 }
 
 //SEARCH BAR
+function submitInput(e) {
+  if (e.key == "Enter") {
+    flagSearch();
+  }
+}
 function flagSearch() {
   let input = searchBar.value;
   input = input.toLowerCase();
@@ -154,7 +169,7 @@ function Blue() {
       hideCard(card[i]);
     }
   }
-  dropNameChange("Blue Flags", "#004aad");
+  dropNameChange("Blue Flags", "rgb(1, 57, 150)");
 }
 
 function Yellow() {
@@ -208,5 +223,5 @@ function dropNameChange(color, backC) {
 function AllFlagButton(color, backC) {
   dropName.textContent = color;
   dropBack.style.backgroundColor = backC;
-  dropBack.style.borderBottom = "solid 3px #ffde59";
+  dropBack.style.borderBottom = "solid 4px #004aad";
 }
