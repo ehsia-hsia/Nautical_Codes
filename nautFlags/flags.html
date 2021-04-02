@@ -163,7 +163,7 @@
     </div> -->
 
     <div
-      class="btn-group"
+      class="btn-group dropGroup"
       role="group"
       aria-label="Button group with nested dropdown"
     >
@@ -176,9 +176,16 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Dropdown
+          Flag Search
         </button>
-        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <div class="dropdown-menu droppedItems" aria-labelledby="btnGroupDrop1">
+          <input
+            class="searchBar col-lg-1.5"
+            type="text"
+            id="myInput"
+            placeholder="Search for flags by meaning or names..."
+          />
+          <button>submir</button>
           <button
             type="button"
             class="btn btn-secondary col-lg-1.5"

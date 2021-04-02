@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Century Gothic";
-  background: black;
-}
-
 /*Secdary NAV*/
 
 .colorButtons {
@@ -49,23 +44,36 @@ body {
 }
 .searchBar {
   height: 40px;
-  width: 350px;
-  border-left: solid 2px white;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  width: 50%;
 }
 .btn {
-  font-size: 15px;
+  font-size: 2rem;
   font-weight: bold;
   height: 100%;
-  width: 100%;
+  width: 98vw;
   color: white;
-  border-radius: 15px;
 }
 
-.dropButtons {
-  width: 100vw;
-  background-color: blue;
+.dropGroup {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+.dropGroup .dropButtons {
+  width: 100%;
+}
+
+.droppedItems {
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  background-color: black;
+}
+
+.droppedItems button,
+input {
+  width: 50%;
+  border: solid 3px black;
 }
 
 #myRedButton {
