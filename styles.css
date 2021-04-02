@@ -3,8 +3,8 @@
 }
 
 body {
-  font-family: "Century Gothic";
-  background: #021e43;
+  font-family: Helvetica, sans-serif;
+  background: black;
 }
 
 /*Nav Bar*/
@@ -38,10 +38,10 @@ body {
 /*Header*/
 .header {
   height: 100%;
-  width: 100%;
+  width: 98vw;
   padding: 5%;
   margin: auto;
-  background-color: black;
+  background-color: white;
   border: solid 10px #004aad;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
 }
@@ -79,12 +79,14 @@ a button {
 .big-heading {
   font-size: 10vh;
   padding-right: 1%;
+  color: black;
 }
 
 .aboutpara {
   width: 50%;
   font-size: 10vh;
   word-wrap: break-word;
+  color: black;
 }
 
 /*Grid Sections*/
@@ -99,8 +101,8 @@ a button {
   width: 90%;
   padding: 3%;
   margin: 3% auto;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   box-shadow: 3px 3px 10px 3px rgb(0, 0, 0);
   border: solid 10px;
 }
@@ -183,11 +185,11 @@ a button {
 
 /*Grid Item Text */
 .sectiontitle {
-  font-size: 4rem;
+  font-size: 5em;
   padding-bottom: 15px;
   margin: auto;
 }
-.description {
+.descriptionFlex {
   font-size: 15px;
   padding-right: 3%;
   box-shadow: none;
@@ -236,6 +238,7 @@ a button {
     padding: 2%;
     text-align: center;
   }
+
   .header,
   .aboutpara {
     text-align: center;
@@ -256,10 +259,26 @@ a button {
   .descrip {
     margin-bottom: 8%;
   }
+  .sectiontitle {
+    font-size: 3em;
+  }
   .aboutpara {
     width: 100%;
+    font-size: 3em;
   }
   .header {
     height: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .aboutpara,
+  .descrip {
+    margin-bottom: 8%;
+  }
+  .sectiontitle {
+    font-size: 2em;
+  }
+  .aboutpara {
+    font-size: 3em;
   }
 }

@@ -58,9 +58,14 @@ body {
   font-size: 15px;
   font-weight: bold;
   height: 100%;
-  width: 90px;
+  width: 100%;
   color: white;
   border-radius: 15px;
+}
+
+.dropButtons {
+  width: 100vw;
+  background-color: blue;
 }
 
 #myRedButton {

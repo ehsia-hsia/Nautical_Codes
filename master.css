@@ -1,3 +1,8 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background: black;
+}
+
 .footer {
   width: 100%;
   padding: 2%;
@@ -43,13 +48,11 @@
 .navbar-brand {
   color: white !important;
   font-size: 40px;
-  font-family: "Century Gothic";
 }
 
 .nav-link {
   color: white !important;
   font-size: 25px;
-  font-family: "Century Gothic";
 }
 
 .nav-link:hover {
