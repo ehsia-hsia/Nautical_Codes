@@ -19,7 +19,8 @@
 .dropGroup .dropmenu .dropDrop {
   /*Dropmenu Button*/
   background-color: black;
-  max-height: 100px;
+  min-height: 70px;
+  max-height: 80px;
   border-bottom: solid 4px #004aad;
   border-radius: 0;
   border-right: 0;
@@ -270,7 +271,7 @@
   }
 
   .searchBar::placeholder {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
   .header .aboutpara h4 {
     padding: 5%;

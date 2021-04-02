@@ -43,7 +43,7 @@ body {
 
 /*Nav Bar*/
 .navbar-custom {
-  width: 100vw !important;
+  width: 100% !important;
   background-color: black;
   border-bottom: solid;
   border-width: 5px;
