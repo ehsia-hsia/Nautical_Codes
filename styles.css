@@ -37,10 +37,10 @@ body {
 
 /*Header*/
 .header {
-  height: 100%;
-  width: 98vw;
+  margin: 0;
+  height: 87vh;
+  width: 99%;
   padding: 5%;
-  margin: auto;
   background-color: black;
   border: solid 10px #004aad;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
@@ -57,32 +57,31 @@ body {
 
 .titleHead,
 .aboutpara {
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .buttons {
   width: 100%;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .header-buttons {
   width: 100%;
-  height: 50%;
+  height: 70%;
   padding-bottom: 0;
   margin: auto;
+  font-size: 3vh !important;
 }
-a button {
-  font-size: 1vh;
-}
+
 .big-heading {
   font-size: 10vh;
   padding-right: 1%;
 }
 
-.aboutpara {
+.aboutpara h4 {
   width: 50%;
-  font-size: 10vh;
+  font-size: 4vh;
   word-wrap: break-word;
 }
 
@@ -120,8 +119,9 @@ a button {
 .semimage,
 .morseimage,
 .flagimage {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  padding: 5%;
   border: solid;
   border-width: 10px;
   box-shadow: 0 6px 8px 0 rgba(157, 152, 152, 0.2);
@@ -131,9 +131,11 @@ a button {
 .sem-flex-grid {
   border-color: #ffde59;
 }
+
 .morseimage,
 .morse-flex-grid {
   border-color: #d02023;
+  z-index: 2;
 }
 .flagimage,
 .flag-flex-grid {
@@ -184,11 +186,14 @@ a button {
 .sectiontitle {
   font-size: 5em;
   padding-bottom: 15px;
+  padding-bottom: 4%;
+
   margin: auto;
 }
 .descriptionFlex {
-  font-size: 15px;
+  font-size: 3vh;
   padding-right: 3%;
+  padding-bottom: 3%;
   box-shadow: none;
 }
 
@@ -200,7 +205,22 @@ a button {
     flex-direction: column;
     flex: 100%;
     text-align: center;
+    padding: 5%;
   }
+  .sem-flex-grid,
+  .morse-flex-grid,
+  .flag-flex-grid {
+    border-width: 7px;
+  }
+  .morseimage,
+  .semimage,
+  .flagimage {
+    border: none;
+    height: 50%;
+    width: 50%;
+    box-shadow: none;
+  }
+
   .sectiontitle,
   .description {
     padding-left: 0px;
@@ -224,16 +244,19 @@ a button {
 }
 
 @media (max-width: 660px) {
+  button {
+    height: 50%;
+  }
   .aboutpara,
   .descrip {
     margin-bottom: 8%;
   }
+
   .sectiontitle {
     font-size: 3em;
   }
-  .aboutpara {
+  .aboutpara h4 {
     width: 100%;
-    font-size: 3em;
   }
   .header {
     height: 80%;
