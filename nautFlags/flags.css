@@ -38,6 +38,9 @@
 
 .droppedItems button {
   width: 80%;
+  min-height: 25%;
+  max-height: 500px;
+  font-size: 4vh;
   border: solid 1px black;
   -webkit-filter: drop-shadow(3px 3px 3px rgba(121, 116, 116, 0.618));
   filter: drop-shadow(-3px -3px 5px rgba(216, 214, 214, 0.556));
@@ -267,6 +270,33 @@
 @media (max-width: 600px) {
   .gridlayout {
     margin-top: 40%;
+  }
+  .description {
+    font-size: 25px;
+  }
+
+  .searchBar::placeholder {
+    font-size: 0.5em;
+  }
+  .header .aboutpara h4 {
+    padding: 5%;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 350px) {
+  .body,
+  .html {
+    margin: 0;
+    width: 150vw;
+  }
+
+  .gridlayout {
+    margin: auto;
+  }
+  .header {
+    width: 100% !important;
+    height: 60%;
+    margin-right: 0;
   }
   .description {
     font-size: 25px;
