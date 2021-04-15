@@ -43,7 +43,7 @@
   font-size: 4vh;
   border: solid 1px black;
   -webkit-filter: drop-shadow(3px 3px 3px rgba(121, 116, 116, 0.618));
-  filter: drop-shadow(-3px -3px 5px rgba(216, 214, 214, 0.556));
+  filter: drop-shadow(0px -3px 5px rgba(182, 180, 180, 0.556));
 }
 .searchBar,
 .btn,
@@ -119,7 +119,8 @@
   margin: 0;
   margin-top: 70px;
   height: 77vh;
-  width: 99%;
+  width: 100%;
+  max-width: 100%;
   padding: 5%;
   background-color: black;
   border: solid 10px #004aad;
@@ -256,6 +257,7 @@
   .gridlayout {
     margin-top: 25%;
   }
+
   .card {
     width: 100%;
   }
@@ -276,25 +278,23 @@
   }
 
   .searchBar::placeholder {
-    font-size: 0.5em;
+    font-size: 3vh;
   }
   .header .aboutpara h4 {
     padding: 5%;
     font-size: 0.8em;
   }
 }
-@media (max-width: 350px) {
-  .body,
+@media (max-width: 380px) {
+  /* .body,
   .html {
     margin: 0;
-    width: 150vw;
-  }
-
+    width: 110vw;
+  } */
   .gridlayout {
     margin: auto;
   }
   .header {
-    width: 100% !important;
     height: 60%;
     margin-right: 0;
   }
@@ -303,7 +303,40 @@
   }
 
   .searchBar::placeholder {
-    font-size: 0.5em;
+    font-size: 2vh;
+  }
+  .header .aboutpara h4 {
+    padding: 5%;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 310px) {
+  .body,
+  .html {
+    margin: 0;
+    width: 115%;
+    position: fixed;
+  }
+  .navbar-custom {
+    width: 105%;
+    margin: 0%;
+  }
+  .gridlayout {
+    margin: auto;
+    align-items: center;
+  }
+  .header {
+    height: 60%;
+    margin-right: 0;
+  }
+  .description {
+    font-size: 25px;
+  }
+  .card {
+    width: 80%;
+  }
+  .searchBar::placeholder {
+    font-size: 1.8vh;
   }
   .header .aboutpara h4 {
     padding: 5%;

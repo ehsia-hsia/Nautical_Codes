@@ -1,12 +1,15 @@
-html {
-  width: 100vw;
-}
 body {
   font-family: Helvetica, sans-serif;
   background: black;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  box-sizing: border-box;
 }
-
+html {
+  width: 100%;
+  max-width: 100%;
+}
 .footer {
   width: 100%;
   padding: 2%;
@@ -43,7 +46,7 @@ body {
 
 /*Nav Bar*/
 .navbar-custom {
-  width: 100% !important;
+  width: 100%;
   background-color: black;
   border-bottom: solid;
   border-width: 5px;

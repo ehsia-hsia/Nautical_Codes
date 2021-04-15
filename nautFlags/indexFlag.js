@@ -1,69 +1,71 @@
 //FLAG ID"S
-let alpha = document.getElementById("alpha");
-let bravo = document.getElementById("bravo");
-let charlie = document.getElementById("charlie");
-let delta = document.getElementById("delta");
-let echo = document.getElementById("echo");
-let foxtrot = document.getElementById("foxtrot");
-let golf = document.getElementById("golf");
-let hotel = document.getElementById("hotel");
-let india = document.getElementById("india");
-let juliet = document.getElementById("juliet");
-let kilo = document.getElementById("kilo");
-let lima = document.getElementById("lima");
-let mike = document.getElementById("mike");
-let november = document.getElementById("november");
-let oscar = document.getElementById("oscar");
-let papa = document.getElementById("papa");
-let quebec = document.getElementById("quebec");
-let romeo = document.getElementById("romeo");
-let sierra = document.getElementById("sierra");
-let tango = document.getElementById("tango");
-let uniform = document.getElementById("uniform");
-let victor = document.getElementById("victor");
-let whiskey = document.getElementById("whiskey");
-let xray = document.getElementById("xray");
-let yankee = document.getElementById("yankee");
-let zulu = document.getElementById("zulu");
+const alpha = document.getElementById("alpha");
+const bravo = document.getElementById("bravo");
+const charlie = document.getElementById("charlie");
+const delta = document.getElementById("delta");
+const echo = document.getElementById("echo");
+const foxtrot = document.getElementById("foxtrot");
+const golf = document.getElementById("golf");
+const hotel = document.getElementById("hotel");
+const india = document.getElementById("india");
+const juliet = document.getElementById("juliet");
+const kilo = document.getElementById("kilo");
+const lima = document.getElementById("lima");
+const mike = document.getElementById("mike");
+const november = document.getElementById("november");
+const oscar = document.getElementById("oscar");
+const papa = document.getElementById("papa");
+const quebec = document.getElementById("quebec");
+const romeo = document.getElementById("romeo");
+const sierra = document.getElementById("sierra");
+const tango = document.getElementById("tango");
+const uniform = document.getElementById("uniform");
+const victor = document.getElementById("victor");
+const whiskey = document.getElementById("whiskey");
+const xray = document.getElementById("xray");
+const yankee = document.getElementById("yankee");
+const zulu = document.getElementById("zulu");
 
 // VARIABLES
-let card = document.getElementsByClassName("card");
-let name = document.getElementsByClassName("name");
-let header = document.querySelector(".header");
-let dropName = document.getElementById("searchName");
-let dropBack = document.getElementById("topLevelDrop").firstElementChild
+const card = document.getElementsByClassName("card");
+const name = document.getElementsByClassName("name");
+const header = document.querySelector(".header");
+const dropName = document.getElementById("searchName");
+const dropBack = document.getElementById("topLevelDrop").firstElementChild
   .firstElementChild;
-let dropMenu = document.getElementById("droppedItems");
+const dropMenu = document.getElementById("droppedItems");
+const body = document.getElementsByTagName("body");
 //EVENT LISTENERS
-let redButton = document.querySelector("#myRedButton");
+const redButton = document.querySelector("#myRedButton");
 redButton.addEventListener("click", Red);
 
-let blueButton = document.querySelector("#myBlueButton");
+const blueButton = document.querySelector("#myBlueButton");
 blueButton.addEventListener("click", Blue);
 
-let yellowButton = document.querySelector("#myYellowButton");
+const yellowButton = document.querySelector("#myYellowButton");
 yellowButton.addEventListener("click", Yellow);
 
-let whiteButton = document.querySelector("#myWhiteButton");
+const whiteButton = document.querySelector("#myWhiteButton");
 whiteButton.addEventListener("click", White);
 
-let blackButton = document.querySelector("#myBlackButton");
+const blackButton = document.querySelector("#myBlackButton");
 blackButton.addEventListener("click", Black);
 
-let allButton = document.querySelector("#myAllButton");
+const allButton = document.querySelector("#myAllButton");
 allButton.addEventListener("click", All);
 
 let searchBar = document.querySelector("#myInput");
-searchBar.addEventListener("focus", flagSearch);
+searchBar.addEventListener("keyup", flagSearch);
 searchBar.addEventListener("keyup", submitInput);
+// searchBar.addEventListener("focus", showMenu);
 
 searchBar.autocomplete = "off";
 
-let searchSubmit = document.querySelector(".submit");
+const searchSubmit = document.querySelector(".submit");
 searchSubmit.addEventListener("click", flagSearch);
 
 //COLOR ARRAYS
-let red = [
+const red = [
   bravo,
   charlie,
   echo,
@@ -78,7 +80,7 @@ let red = [
   yankee,
   zulu,
 ];
-let blue = [
+const blue = [
   alpha,
   charlie,
   delta,
@@ -95,8 +97,8 @@ let blue = [
   xray,
   zulu,
 ];
-let yellow = [delta, golf, india, kilo, oscar, quebec, romeo, yankee, zulu];
-let white = [
+const yellow = [delta, golf, india, kilo, oscar, quebec, romeo, yankee, zulu];
+const white = [
   alpha,
   charlie,
   foxtrot,
@@ -112,7 +114,7 @@ let white = [
   whiskey,
   xray,
 ];
-let black = [india, lima, zulu];
+const black = [india, lima, zulu];
 
 //Filter FUNCTIONS
 
@@ -123,20 +125,29 @@ function hideHeader() {
 function hideCard(card) {
   card.classList.add("hidden");
 }
+
 function resetHidden(card) {
   card.classList.remove("hidden");
 }
 
 //SEARCH BAR
+
 function submitInput(e) {
   if (e.key == "Enter") {
     flagSearch();
   }
 }
-function flagSearch() {
+
+// function showMenu() {
+//   $(".droppedItems").dropdown("show");
+// }
+
+function flagSearch(e) {
   let input = searchBar.value;
   input = input.toLowerCase();
   hideHeader();
+  AllFlagButton("Flag Search", "black");
+
   for (let i = 0; i < card.length; i++) {
     resetHidden(card[i]);
     if (!card[i].innerHTML.toLowerCase().includes(input)) {
@@ -144,6 +155,9 @@ function flagSearch() {
     } else if (input == "") {
       resetHidden(header);
       resetHidden(card[i]);
+    } else {
+      card[i].style.width = "80%";
+      card[i].style.marginTop = "15%";
     }
   }
 }
