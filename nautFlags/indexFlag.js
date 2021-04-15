@@ -194,7 +194,7 @@ function Yellow() {
       hideCard(card[i]);
     }
   }
-  dropNameChange("Yellow Flags", "rgb(231, 185, 1");
+  dropNameChange("Yellow Flags", "rgb(256,252,12)");
 }
 
 function White() {
@@ -233,9 +233,15 @@ function dropNameChange(color, backC) {
   dropName.textContent = color;
   dropBack.style.backgroundColor = backC;
   dropBack.style.borderBottom = 0;
+  if (dropName.textContent == "Yellow Flags") {
+    dropName.style.color = "black";
+  } else {
+    dropName.style.color = "white";
+  }
 }
 function AllFlagButton(color, backC) {
   dropName.textContent = color;
   dropBack.style.backgroundColor = backC;
   dropBack.style.borderBottom = "solid 4px #004aad";
+  dropName.style.color = "white";
 }

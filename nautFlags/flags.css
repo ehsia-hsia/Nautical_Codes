@@ -45,6 +45,7 @@
   /* border-bottom: none; */
   border-top: none;
   background-color: black;
+
   -webkit-filter: drop-shadow(3px 3px 3px rgba(121, 116, 116, 0.618));
   filter: drop-shadow(20px 20px 10px rgba(44, 44, 44, 0.556));
 }
@@ -104,10 +105,10 @@ button:hover {
   background-color: #004aad;
 }
 #myYellowButton {
-  border-color: rgb(231, 185, 1);
+  border-color: #fdd63a;
 }
 #myYellowButton:hover {
-  background-color: rgb(231, 185, 1);
+  background-color: #fdd63a;
 }
 #myWhiteButton {
   border-color: white;
