@@ -303,15 +303,20 @@ body {
 
 .headingRow {
   text-align: center;
-  padding: 1%;
+  padding: 2%;
   border-bottom: solid 5px #d02023;
   background-color: black;
 }
 
 .headingRow h1 {
-  font-size: 3rem;
+  font-size: 6vh;
   color: white;
 }
+
+.clearRow {
+  height: 10vh;
+}
+
 #textArea {
   height: 400px;
   width: 100%;
@@ -331,7 +336,7 @@ body {
 }
 
 #submit {
-  font-size: 30px;
+  font-size: 4vh;
   text-align: center;
   background-color: #d02023;
   color: white;
@@ -345,7 +350,9 @@ body {
 
 #clear {
   width: 100%;
-  font-size: 20px;
+  height: 100%;
+  font-size: 4vh;
+  text-align: center;
   padding: 0;
   background-color: #d02023;
   color: white;
@@ -363,8 +370,10 @@ body {
   #translatedArea {
     height: 40vh;
     width: 100%;
+    font-size: 4vh;
   }
-  #submit {
+  #submit,
+  #clear {
     font-size: 4vh;
     padding: 3%;
   }
