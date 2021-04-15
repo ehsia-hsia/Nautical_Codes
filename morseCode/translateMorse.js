@@ -141,7 +141,7 @@ function translate() {
 
   // transTextArray.toString();
   // transTextArray.join("");
-  translatedText.style.fontSize = "2rem";
+  // translatedText.style.fontSize = "4vh";
   return (translatedText.innerHTML = transTextArray.join("    "));
 }
 

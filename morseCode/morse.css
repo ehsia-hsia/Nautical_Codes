@@ -316,28 +316,31 @@ body {
   height: 400px;
   width: 100%;
   color: black;
-  font-size: 1.5rem;
+  font-size: 5vh;
   padding: 2%;
   text-transform: lowercase;
+  border: none;
 }
 
 #translatedArea {
-  font-size: 30px;
+  font-size: 5vh;
   height: 400px;
   width: 100%;
-  font-size: 1rem;
   padding: 2%;
+  border: none;
 }
+
 #submit {
   font-size: 30px;
   text-align: center;
   background-color: #d02023;
   color: white;
-  border: solid 1px white;
+  border: none;
 }
 #submit:hover {
-  background-color: #8d0305;
+  background-color: #ffde59;
   border: none;
+  color: black;
 }
 
 #clear {
@@ -346,20 +349,23 @@ body {
   padding: 0;
   background-color: #d02023;
   color: white;
+  border: none;
+  border-top: solid 2px #ffde59;
 }
 #clear:hover {
   background-color: #ffde59;
-  border: solid 3px #ffde59;
+  border: none;
   color: black;
 }
 
 @media (max-width: 990px) {
-  #textArea {
-    height: 200px;
+  #textArea,
+  #translatedArea {
+    height: 40vh;
     width: 100%;
   }
-
-  #translatedArea {
-    height: 200px;
+  #submit {
+    font-size: 4vh;
+    padding: 3%;
   }
 }
