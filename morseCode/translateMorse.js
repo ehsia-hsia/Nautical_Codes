@@ -8,7 +8,7 @@ buttonSubmit.addEventListener("click", translate);
 
 let buttonClear = document.getElementById("clear");
 buttonClear.addEventListener("click", clear);
-
+ogText.style.color = "white";
 function translate() {
   ogText = ogText.value;
   // ogText.toString();
@@ -142,6 +142,7 @@ function translate() {
   // transTextArray.toString();
   // transTextArray.join("");
   // translatedText.style.fontSize = "4vh";
+  translatedText.style.color = "white";
   return (translatedText.innerHTML = transTextArray.join("    "));
 }
 

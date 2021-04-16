@@ -269,46 +269,6 @@ body {
     font-size: 5vh;
   }
 }
-/*
-@media (max-width: 700px) {
-  .header,
-  .gridlayout {
-    margin-top: 25%;
-    justify-items: center;
-  }
-  .card {
-    width: 100%;
-  }
-  .header {
-    width: 90%;
-  }
-  .header p,
-  h1 {
-    text-align: center;
-  }
-  .header button {
-    display: block;
-    margin: auto;
-  }
-}
-@media (max-width: 600px) {
-  .name {
-    font-size: 3rem;
-  }
-  .header h1 {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  .header p {
-    padding-top: 0%;
-    padding-bottom: 3%;
-    font-size: 1rem;
-  }
-
-  .headFooter {
-    font-size: 0.8rem;
-  }
-}*/
 
 /*Translator*/
 .transArea {
@@ -342,6 +302,15 @@ body {
   height: 10vh;
 }
 
+#textArea,
+#translatedArea {
+  background-color: black;
+}
+
+#textArea::placeholder,
+#translatedArea::placeholder {
+  color: rgb(202, 200, 200);
+}
 #textArea {
   height: 400px;
   width: 100%;
@@ -365,12 +334,11 @@ body {
   text-align: center;
   background-color: #d02023;
   color: white;
-  border: none;
+  border: solid 2px white;
 }
 #submit:hover {
-  background-color: #ffde59;
+  background-color: #d02023;
   border: none;
-  color: black;
 }
 
 #clear {
