@@ -148,13 +148,16 @@ function translate() {
 
 document.addEventListener("keydown", function (e) {
   ///creates object
-  console.log(e.key);
   if (e.key === "Backspace") {
     ogText = document.getElementById("textArea");
   }
   if (ogText.value === "") {
     clear();
   }
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") translate();
 });
 
 function clear() {
