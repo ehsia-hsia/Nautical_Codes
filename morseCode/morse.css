@@ -223,6 +223,9 @@ body {
 }
 
 @media (max-width: 600px) {
+  .gridlayout {
+    margin-top: 30%;
+  }
   .card {
     width: 90%;
     margin: auto;

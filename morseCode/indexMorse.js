@@ -1,6 +1,7 @@
 let header = document.getElementById("header");
 let searchBar = document.querySelector("#myInput");
 let letter = document.getElementsByClassName("letterName");
+let morseNote = document.getElementsByClassName("morseNotation");
 
 searchBar.addEventListener("keyup", morseSearch);
 
@@ -17,6 +18,12 @@ function morseSearch() {
 
     if (!letter[i].innerHTML.toLowerCase().includes(input)) {
       addHidden(card[i]);
+    } else {
+      card[
+        i
+      ].firstElementChild.firstElementChild.nextElementSibling.style.fontSize =
+        "15vh";
+      card[i].style.marginTop = "20";
     }
   }
   if (!input.length == 0) {
