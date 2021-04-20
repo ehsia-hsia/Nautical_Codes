@@ -1,6 +1,6 @@
 body {
   font-family: Helvetica, sans-serif;
-  background: black;
+  background: white;
   width: 100%;
   max-width: 100%;
   margin: auto;
@@ -75,6 +75,20 @@ html {
 .navbar-toggler-icon {
   background-color: white;
 }
+
+.custom-control,
+.custom-swith {
+  display: inline-block;
+  top: 30%;
+  color: white;
+}
+.custom-control-input:active {
+  background-color: pink;
+}
+#customSwitch1:active {
+  background-color: pink;
+}
+/*Grid Items */
 .name {
   margin: auto;
   margin-bottom: 0;

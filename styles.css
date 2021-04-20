@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Helvetica, sans-serif;
-  background: black;
-}
-
 /*Nav Bar*/
 /* .navbar-custom {
   background-color: black;
@@ -36,12 +31,26 @@ body {
 } */
 
 /*Header*/
+
+.backgroundDarkMode {
+  background-color: black !important;
+}
+.textDarkMode {
+  color: white;
+}
+.borderDarkMode {
+  border: solid 3px white;
+}
+.noButtonBorder {
+  border: none;
+}
+
 .header {
   margin: 0;
   height: 87vh;
-  width: 99%;
+  width: 100%;
   padding: 5%;
-  background-color: black;
+  background-color: white;
   border: solid 10px #004aad;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.398);
 }
@@ -52,7 +61,6 @@ body {
   margin: auto;
   text-align: center;
   justify-content: center;
-  color: white;
 }
 
 .titleHead,
@@ -71,6 +79,7 @@ body {
   height: 70%;
   padding-bottom: 0;
   margin: auto;
+  color: white;
   font-size: 3vh !important;
 }
 
@@ -146,7 +155,6 @@ body {
 .sem_button,
 .morse_button,
 .flag_button {
-  border: solid 3px white;
   color: white;
   padding: 15px 32px;
   text-align: center;

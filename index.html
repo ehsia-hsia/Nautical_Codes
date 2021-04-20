@@ -58,11 +58,12 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <!-- <li class="nav-item active">
             <a class="nav-link" href="#sem"
               >Semaphore<span class="sr-only">Semaphore</span></a
             >
-          </li>
+          </li> -->
+
           <li class="nav-item active">
             <a class="nav-link" href="#mor"
               >Morse Code<span class="sr-only">Morse</span></a
@@ -72,6 +73,18 @@
             <a class="nav-link" href="#flags">
               Flags <span class="sr-only">Flags</span></a
             >
+          </li>
+          <li>
+            <div class="custom-control custom-switch" id="toggleSwitch">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="customSwitch1"
+              />
+              <label class="custom-control-label" for="customSwitch1"
+                >Dark Mode</label
+              >
+            </div>
           </li>
         </ul>
       </div>
@@ -86,9 +99,9 @@
         <h4>A complete guide to nautical codes.</h4>
       </div>
       <div class="row buttons">
-        <a class="col-lg-4 col-sm-12" href="Semaphore/sem.html" target="_blank">
+        <!-- <a class="col-lg-4 col-sm-12" href="Semaphore/sem.html" target="_blank">
           <button class="sem_button header-buttons">Semaphore Guide</button>
-        </a>
+        </a> -->
 
         <a
           class="col-lg-4 col-sm-12"
@@ -109,7 +122,7 @@
       </div>
     </div>
 
-    <!--Sem Flex-->
+    <!-- Sem Flex
     <div class="sem-flex-grid" id="sem">
       <div class="col">
         <h1 class="sectiontitle">Semaphore</h1>
@@ -124,7 +137,7 @@
       <div class="col">
         <img class="semimage" src="Images/sem.png" />
       </div>
-    </div>
+    </div> -->
 
     <!--Mor Flex-->
     <div class="morse-flex-grid" id="mor">
@@ -181,5 +194,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
