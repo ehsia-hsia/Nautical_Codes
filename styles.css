@@ -106,8 +106,8 @@
   width: 90%;
   padding: 3%;
   margin: 3% auto;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   box-shadow: 3px 3px 10px 3px rgb(0, 0, 0);
   border: solid 10px;
 }
