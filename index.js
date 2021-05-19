@@ -8,7 +8,10 @@ const flagFlex = document.getElementById("flags");
 
 const flexTitle = document.querySelectorAll(".sectiontitle");
 const flexPara = document.querySelectorAll(".descriptionFlex");
-
+const images = document.querySelectorAll("img");
+images.forEach((image) => {
+  image.classList.add("backgroundDarkMode");
+});
 const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
   button.classList.add("noButtonBorder");
