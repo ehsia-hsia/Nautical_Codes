@@ -18,7 +18,6 @@
 }
 .dropGroup .dropmenu .dropDrop {
   /*Dropmenu Button*/
-  background-color: black;
   min-height: 70px;
   max-height: 80px;
   border-bottom: solid 4px #004aad;
